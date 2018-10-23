@@ -1,0 +1,3300 @@
+EESchema Schematic File Version 4
+LIBS:power-car-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 4 5
+Title ""
+Date "2018-08-05"
+Rev "1.4"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L device:Transformer_1P_1S T?
+U 1 1 5AE7DC6B
+P -7150 6400
+F 0 "T?" H -7150 6778 50  0000 C CNN
+F 1 "240v to 24v" H -7150 6687 50  0000 C CNN
+F 2 "" H -7150 6400 50  0001 C CNN
+F 3 "" H -7150 6400 50  0001 C CNN
+	1    -7150 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D_Bridge_+-AA D?
+U 1 1 5AE7DE11
+P -6250 6400
+F 0 "D?" H -6250 6800 50  0000 C CNN
+F 1 "D_Bridge_+-AA" H -6250 6800 50  0001 C CNN
+F 2 "" H -6250 6400 50  0001 C CNN
+F 3 "" H -6250 6400 50  0001 C CNN
+	1    -6250 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-6750 6200 -6750 6100
+Wire Wire Line
+	-6750 6100 -6250 6100
+Wire Wire Line
+	-6750 6600 -6750 6700
+Wire Wire Line
+	-6750 6700 -6250 6700
+Text GLabel -5750 6400 2    50   Input ~ 0
++24V
+Text GLabel -5750 6900 2    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U4
+U 1 1 5AE7E247
+P -5550 2700
+F 0 "U4" H -5550 2900 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -5550 2500 50  0001 C CNN
+F 2 "" H -4900 2700 50  0001 C CNN
+F 3 "" H -4900 2700 50  0001 C CNN
+	1    -5550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U4
+U 2 1 5AE7E25D
+P -5550 3600
+F 0 "U4" H -5550 3755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -5550 3400 50  0001 C CNN
+F 2 "" H -4900 3600 50  0001 C CNN
+F 3 "" H -4900 3600 50  0001 C CNN
+	2    -5550 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U4
+U 3 1 5AE7E293
+P -10700 -950
+F 0 "U4" H -10700 -750 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -10700 -1150 50  0001 C CNN
+F 2 "" H -10050 -950 50  0001 C CNN
+F 3 "" H -10050 -950 50  0001 C CNN
+	3    -10700 -950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U4
+U 4 1 5AE7E2A2
+P -5550 4500
+F 0 "U4" H -5550 4655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -5550 4300 50  0001 C CNN
+F 2 "" H -4900 4500 50  0001 C CNN
+F 3 "" H -4900 4500 50  0001 C CNN
+	4    -5550 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U4
+U 5 1 5AE7E32A
+P -10700 -550
+F 0 "U4" H -10700 -350 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -10700 -750 50  0001 C CNN
+F 2 "" H -10050 -550 50  0001 C CNN
+F 3 "" H -10050 -550 50  0001 C CNN
+	5    -10700 -550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U4
+U 6 1 5AE7E342
+P -5550 3900
+F 0 "U4" H -5550 3987 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -5550 3700 50  0001 C CNN
+F 2 "" H -4900 3900 50  0001 C CNN
+F 3 "" H -4900 3900 50  0001 C CNN
+	6    -5550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL1
+U 1 1 5AE7E46F
+P -15400 4350
+F 0 "RL1" H -15550 4550 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -15400 4150 50  0001 C CNN
+F 2 "" H -14750 4350 50  0001 C CNN
+F 3 "" H -14750 4350 50  0001 C CNN
+	1    -15400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL1
+U 2 1 5AE7E475
+P -15400 3250
+F 0 "RL1" H -15400 3450 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -15400 3050 50  0001 C CNN
+F 2 "" H -14750 3250 50  0001 C CNN
+F 3 "" H -14750 3250 50  0001 C CNN
+	2    -15400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL1
+U 3 1 5AE7E47B
+P -15400 3450
+F 0 "RL1" H -15400 3650 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -15400 3250 50  0001 C CNN
+F 2 "" H -14750 3450 50  0001 C CNN
+F 3 "" H -14750 3450 50  0001 C CNN
+	3    -15400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL1
+U 4 1 5AE7E481
+P -15400 3650
+F 0 "RL1" H -15400 3850 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -15400 3450 50  0001 C CNN
+F 2 "" H -14750 3650 50  0001 C CNN
+F 3 "" H -14750 3650 50  0001 C CNN
+	4    -15400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL1
+U 5 1 5AE7E487
+P -13500 -650
+F 0 "RL1" H -13500 -450 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -13500 -850 50  0001 C CNN
+F 2 "" H -12850 -650 50  0001 C CNN
+F 3 "" H -12850 -650 50  0001 C CNN
+	5    -13500 -650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL1
+U 6 1 5AE7E48D
+P -15400 5200
+F 0 "RL1" H -15400 5400 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -15400 5000 50  0001 C CNN
+F 2 "" H -14750 5200 50  0001 C CNN
+F 3 "" H -14750 5200 50  0001 C CNN
+	6    -15400 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U6
+U 1 1 5AE7E4FB
+P -7950 4500
+F 0 "U6" H -7950 4700 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7950 4300 50  0001 C CNN
+F 2 "" H -7300 4500 50  0001 C CNN
+F 3 "" H -7300 4500 50  0001 C CNN
+	1    -7950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U6
+U 2 1 5AE7E501
+P -7950 4900
+F 0 "U6" H -7950 5100 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7950 4700 50  0001 C CNN
+F 2 "" H -7300 4900 50  0001 C CNN
+F 3 "" H -7300 4900 50  0001 C CNN
+	2    -7950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U6
+U 3 1 5AE7E507
+P -8850 -950
+F 0 "U6" H -8850 -750 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -8850 -1150 50  0001 C CNN
+F 2 "" H -8200 -950 50  0001 C CNN
+F 3 "" H -8200 -950 50  0001 C CNN
+	3    -8850 -950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U6
+U 4 1 5AE7E50D
+P -8850 -750
+F 0 "U6" H -8850 -550 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -8850 -950 50  0001 C CNN
+F 2 "" H -8200 -750 50  0001 C CNN
+F 3 "" H -8200 -750 50  0001 C CNN
+	4    -8850 -750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U6
+U 5 1 5AE7E513
+P -8850 -550
+F 0 "U6" H -8850 -350 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -8850 -750 50  0001 C CNN
+F 2 "" H -8200 -550 50  0001 C CNN
+F 3 "" H -8200 -550 50  0001 C CNN
+	5    -8850 -550
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U6
+U 6 1 5AE7E519
+P -8850 -350
+F 0 "U6" H -8850 -150 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -8850 -550 50  0001 C CNN
+F 2 "" H -8200 -350 50  0001 C CNN
+F 3 "" H -8200 -350 50  0001 C CNN
+	6    -8850 -350
+	1    0    0    -1  
+$EndComp
+Text GLabel -8850 3900 0    50   Input ~ 0
+HEP_Aux_1
+Text GLabel -8850 4100 0    50   Input ~ 0
+HEP_Aux_3
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5AE7EBF4
+P -3950 3900
+F 0 "SW?" H -3950 4135 50  0000 C CNN
+F 1 "Trainline Complete" H -3950 4044 50  0000 C CNN
+F 2 "" H -3950 3900 50  0001 C CNN
+F 3 "" H -3950 3900 50  0001 C CNN
+	1    -3950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3750 3900 -3550 3900
+Wire Wire Line
+	-3550 3900 -3550 4100
+Wire Notes Line
+	-4450 3550 -4450 4200
+Wire Notes Line
+	-4450 4200 -3450 4200
+Wire Notes Line
+	-3450 4200 -3450 3550
+Wire Notes Line
+	-3450 3550 -4450 3550
+Wire Wire Line
+	-5250 3900 -4150 3900
+Wire Wire Line
+	-5850 3600 -6050 3600
+Wire Wire Line
+	-6050 3600 -6050 3900
+Wire Wire Line
+	-5250 3600 -5050 3600
+Text GLabel -5050 3600 2    50   Input ~ 0
++24V
+Wire Wire Line
+	-5850 4500 -6050 4500
+Wire Wire Line
+	-5250 4500 -5050 4500
+Text GLabel -5050 4500 2    50   Input ~ 0
+-24V
+Wire Wire Line
+	-8850 3900 -6050 3900
+Connection ~ -6050 3900
+Wire Wire Line
+	-6050 3900 -5850 3900
+Wire Wire Line
+	-8850 4100 -8450 4100
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5AE817AA
+P -6450 2700
+F 0 "SW?" H -6450 2985 50  0000 C CNN
+F 1 "HEP Pickup" H -6450 2894 50  0000 C CNN
+F 2 "" H -6450 2900 50  0001 C CNN
+F 3 "" H -6450 2900 50  0001 C CNN
+	1    -6450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U8
+U 6 1 5AE81876
+P -7150 2700
+F 0 "U8" H -7150 2950 50  0000 C CNN
+F 1 "HEP Voltage Detect" H -7150 2850 50  0000 C CNN
+F 2 "" H -6500 2700 50  0001 C CNN
+F 3 "" H -6500 2700 50  0001 C CNN
+	6    -7150 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel -7850 2700 0    50   Input ~ 0
++24V
+Wire Wire Line
+	-7850 2700 -7650 2700
+Wire Wire Line
+	-6850 2700 -6650 2700
+Wire Wire Line
+	-6250 2700 -6050 2700
+Wire Notes Line width 10
+	-5550 2850 -5550 4450
+Wire Wire Line
+	-5250 2700 -5050 2700
+Text GLabel -5050 2700 2    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 1 1 5AE832DE
+P -7150 4900
+F 0 "U7" H -7300 5100 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7150 4700 50  0001 C CNN
+F 2 "" H -6500 4900 50  0001 C CNN
+F 3 "" H -6500 4900 50  0001 C CNN
+	1    -7150 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 2 1 5AE832E4
+P -7850 -1150
+F 0 "U7" H -7850 -950 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7850 -1350 50  0001 C CNN
+F 2 "" H -7200 -1150 50  0001 C CNN
+F 3 "" H -7200 -1150 50  0001 C CNN
+	2    -7850 -1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 3 1 5AE832EA
+P -7850 -950
+F 0 "U7" H -7850 -750 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7850 -1150 50  0001 C CNN
+F 2 "" H -7200 -950 50  0001 C CNN
+F 3 "" H -7200 -950 50  0001 C CNN
+	3    -7850 -950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 4 1 5AE832F0
+P -7850 -750
+F 0 "U7" H -7850 -550 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7850 -950 50  0001 C CNN
+F 2 "" H -7200 -750 50  0001 C CNN
+F 3 "" H -7200 -750 50  0001 C CNN
+	4    -7850 -750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 5 1 5AE832F6
+P -7150 3000
+F 0 "U7" H -7150 3155 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7150 2800 50  0001 C CNN
+F 2 "" H -6500 3000 50  0001 C CNN
+F 3 "" H -6500 3000 50  0001 C CNN
+	5    -7150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 6 1 5AE832FC
+P -7850 -350
+F 0 "U7" H -7850 -150 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7850 -550 50  0001 C CNN
+F 2 "" H -7200 -350 50  0001 C CNN
+F 3 "" H -7200 -350 50  0001 C CNN
+	6    -7850 -350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-8450 4500 -8450 4100
+Connection ~ -8450 4100
+Wire Wire Line
+	-8450 4100 -3550 4100
+Wire Wire Line
+	-7650 2700 -7650 3000
+Wire Wire Line
+	-7650 3000 -7450 3000
+Connection ~ -7650 2700
+Wire Wire Line
+	-7650 2700 -7450 2700
+Wire Wire Line
+	-6050 3000 -6050 2700
+Connection ~ -6050 2700
+Wire Wire Line
+	-6050 2700 -5850 2700
+Wire Notes Line width 10
+	-7150 4750 -7150 2950
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5AE8CCF4
+P -7150 5300
+F 0 "U?" H -7150 5500 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7150 5100 50  0001 C CNN
+F 2 "" H -6500 5300 50  0001 C CNN
+F 3 "" H -6500 5300 50  0001 C CNN
+	2    -7150 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 3 1 5AE8CCFA
+P -7150 5500
+F 0 "U?" H -7150 5700 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7150 5300 50  0001 C CNN
+F 2 "" H -6500 5500 50  0001 C CNN
+F 3 "" H -6500 5500 50  0001 C CNN
+	3    -7150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5AE8CD00
+P -7150 5700
+F 0 "U?" H -7150 5900 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7150 5500 50  0001 C CNN
+F 2 "" H -6500 5700 50  0001 C CNN
+F 3 "" H -6500 5700 50  0001 C CNN
+	4    -7150 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel -8850 5300 0    50   Input ~ 0
+Genset_L1
+Text GLabel -8850 5500 0    50   Input ~ 0
+Genset_L2
+Text GLabel -8850 5700 0    50   Input ~ 0
+Genset_L3
+Text GLabel -4450 5300 2    50   Input ~ 0
+HEP_L1
+Text GLabel -4450 5500 2    50   Input ~ 0
+HEP_L2
+Text GLabel -4450 5700 2    50   Input ~ 0
+HEP_L3
+Wire Wire Line
+	-8850 5700 -7450 5700
+Wire Wire Line
+	-6850 5300 -5850 5300
+Wire Wire Line
+	-6850 5500 -4850 5500
+Wire Notes Line width 10
+	-7150 5650 -7150 5050
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U8
+U 1 1 5AE9416F
+P -5350 4900
+F 0 "U8" H -5350 5100 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -5350 4700 50  0001 C CNN
+F 2 "" H -4700 4900 50  0001 C CNN
+F 3 "" H -4700 4900 50  0001 C CNN
+	1    -5350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-5650 4900 -5850 4900
+Wire Wire Line
+	-5050 4900 -4850 4900
+Wire Wire Line
+	-4850 5500 -4850 4900
+Connection ~ -4850 5500
+Wire Wire Line
+	-4850 5500 -4450 5500
+Wire Wire Line
+	-8450 6600 -8450 5300
+Wire Wire Line
+	-8450 6600 -7550 6600
+Wire Wire Line
+	-8250 6200 -8250 5500
+Wire Wire Line
+	-8250 6200 -8050 6200
+Wire Wire Line
+	-6550 6400 -6550 6900
+Wire Wire Line
+	-6550 6900 -5750 6900
+Text Notes -7550 1600 0    200  ~ 0
+HEP sourcing
+Text Notes -16050 1600 0    200  ~ 0
+Car power feed\n
+Text GLabel -16900 3250 0    50   Input ~ 0
+Genset_L1
+Text GLabel -16900 3450 0    50   Input ~ 0
+Genset_L2
+Text GLabel -16900 3650 0    50   Input ~ 0
+Genset_L3
+Text GLabel -16900 5900 0    50   Input ~ 0
+HEP_L1
+Text GLabel -16900 6100 0    50   Input ~ 0
+HEP_L2
+Text GLabel -16900 6300 0    50   Input ~ 0
+HEP_L3
+Text GLabel -11900 3250 2    50   Input ~ 0
+Local_L1
+Text GLabel -11900 3450 2    50   Input ~ 0
+Local_L2
+Text GLabel -11900 3650 2    50   Input ~ 0
+Local_L3
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL2
+U 1 1 5AEB7732
+P -14400 5200
+F 0 "RL2" H -14250 5400 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -14400 5000 50  0001 C CNN
+F 2 "" H -13750 5200 50  0001 C CNN
+F 3 "" H -13750 5200 50  0001 C CNN
+	1    -14400 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL2
+U 2 1 5AEB7738
+P -14400 5900
+F 0 "RL2" H -14400 6100 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -14400 5700 50  0001 C CNN
+F 2 "" H -13750 5900 50  0001 C CNN
+F 3 "" H -13750 5900 50  0001 C CNN
+	2    -14400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL2
+U 3 1 5AEB773E
+P -14400 6100
+F 0 "RL2" H -14400 6300 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -14400 5900 50  0001 C CNN
+F 2 "" H -13750 6100 50  0001 C CNN
+F 3 "" H -13750 6100 50  0001 C CNN
+	3    -14400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL2
+U 4 1 5AEB7744
+P -14400 6300
+F 0 "RL2" H -14400 6500 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -14400 6100 50  0001 C CNN
+F 2 "" H -13750 6300 50  0001 C CNN
+F 3 "" H -13750 6300 50  0001 C CNN
+	4    -14400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL2
+U 5 1 5AEB774A
+P -12600 -650
+F 0 "RL2" H -12600 -450 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -12600 -850 50  0001 C CNN
+F 2 "" H -11950 -650 50  0001 C CNN
+F 3 "" H -11950 -650 50  0001 C CNN
+	5    -12600 -650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO RL2
+U 6 1 5AEB7750
+P -14400 4350
+F 0 "RL2" H -14400 4550 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -14400 4150 50  0001 C CNN
+F 2 "" H -13750 4350 50  0001 C CNN
+F 3 "" H -13750 4350 50  0001 C CNN
+	6    -14400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-16900 3250 -16500 3250
+Wire Wire Line
+	-16900 6300 -14700 6300
+Wire Notes Line width 10
+	-15400 4200 -15400 3200
+Wire Notes Line width 10
+	-15400 5200 -15400 4500
+Wire Notes Line width 10
+	-14400 5050 -14400 4350
+Wire Notes Line width 10
+	-14400 6250 -14400 5350
+$Comp
+L mrm:Breaker_1P CB1
+U 1 1 5AEDE64E
+P -16100 4350
+F 0 "CB1" H -16100 4585 50  0000 C CNN
+F 1 "3A" H -16100 4494 50  0000 C CNN
+F 2 "" H -16100 4350 50  0001 C CNN
+F 3 "" H -16100 4350 50  0001 C CNN
+	1    -16100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-15900 4350 -15700 4350
+Wire Wire Line
+	-16300 4350 -16500 4350
+Wire Wire Line
+	-15100 4350 -14700 4350
+Wire Wire Line
+	-14100 4350 -13900 4350
+Wire Wire Line
+	-13100 4350 -13100 3950
+Wire Wire Line
+	-15900 3950 -13100 3950
+$Comp
+L mrm:Breaker_1P CB2
+U 1 1 5AEE83A2
+P -13700 5200
+F 0 "CB2" H -13700 5435 50  0000 C CNN
+F 1 "3A" H -13700 5344 50  0000 C CNN
+F 2 "" H -13700 5200 50  0001 C CNN
+F 3 "" H -13700 5200 50  0001 C CNN
+	1    -13700 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	-16500 5200 -16300 5200
+Wire Wire Line
+	-15900 5200 -15700 5200
+Wire Wire Line
+	-15100 5200 -14700 5200
+Wire Wire Line
+	-14100 5200 -13900 5200
+Wire Wire Line
+	-13100 5200 -13100 5600
+Wire Wire Line
+	-13100 5600 -15900 5600
+Wire Wire Line
+	-12300 3650 -12300 6300
+Wire Wire Line
+	-12300 6300 -14100 6300
+Wire Wire Line
+	-12500 3450 -12500 6100
+Wire Wire Line
+	-12500 6100 -14100 6100
+Wire Wire Line
+	-12700 3250 -12700 5900
+Wire Wire Line
+	-12700 5900 -14100 5900
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5AF4874E
+P -13700 4350
+F 0 "SW?" H -13700 4565 50  0000 C CNN
+F 1 "Drop Genset Feed" H -13700 4474 50  0000 C CNN
+F 2 "" H -13700 4550 50  0001 C CNN
+F 3 "" H -13700 4550 50  0001 C CNN
+	1    -13700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-13500 4350 -13100 4350
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5AF48802
+P -16100 5200
+F 0 "SW?" H -16100 5415 50  0000 C CNN
+F 1 "Drop HEP Feed" H -16100 5324 50  0000 C CNN
+F 2 "" H -16100 5400 50  0001 C CNN
+F 3 "" H -16100 5400 50  0001 C CNN
+	1    -16100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-13500 5200 -13100 5200
+Connection ~ -12700 3250
+Connection ~ -12500 3450
+Connection ~ -12300 3650
+Wire Wire Line
+	-12300 3650 -15100 3650
+Wire Wire Line
+	-11900 3650 -12300 3650
+Wire Wire Line
+	-12500 3450 -15100 3450
+Wire Wire Line
+	-11900 3450 -12500 3450
+Wire Wire Line
+	-12700 3250 -15100 3250
+Wire Wire Line
+	-11900 3250 -12700 3250
+$Comp
+L mrm:Breaker_1P CB3
+U 1 1 5AF5B76F
+P -7850 6200
+F 0 "CB3" H -7850 6435 50  0000 C CNN
+F 1 "3A" H -7850 6344 50  0000 C CNN
+F 2 "" H -7850 6200 50  0001 C CNN
+F 3 "" H -7850 6200 50  0001 C CNN
+	1    -7850 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-16900 3450 -15900 3450
+Wire Wire Line
+	-16900 3650 -15700 3650
+Wire Wire Line
+	-16500 3250 -16500 4350
+Connection ~ -16500 3250
+Wire Wire Line
+	-16500 3250 -15700 3250
+Wire Wire Line
+	-15900 3950 -15900 3450
+Connection ~ -15900 3450
+Wire Wire Line
+	-15900 3450 -15700 3450
+Wire Wire Line
+	-16900 6100 -16500 6100
+Wire Wire Line
+	-15900 5600 -15900 5900
+Connection ~ -15900 5900
+Wire Wire Line
+	-15900 5900 -14700 5900
+Wire Wire Line
+	-16900 5900 -15900 5900
+Wire Wire Line
+	-16500 5200 -16500 6100
+Connection ~ -16500 6100
+Wire Wire Line
+	-16500 6100 -14700 6100
+Text GLabel -6250 3300 2    50   Input ~ 0
+-24V
+Wire Wire Line
+	-6850 3300 -6750 3300
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5AE86563
+P -6250 4500
+F 0 "SW?" H -6250 4715 50  0000 C CNN
+F 1 "HEP Dropout" H -6250 4624 50  0000 C CNN
+F 2 "" H -6250 4700 50  0001 C CNN
+F 3 "" H -6250 4700 50  0001 C CNN
+	1    -6250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Lamp LA?
+U 1 1 5AF934D7
+P -6550 3300
+F 0 "LA?" V -6700 3300 50  0000 C CNN
+F 1 "HEP On" V -6400 3300 50  0000 C CNN
+F 2 "" V -6550 3400 50  0001 C CNN
+F 3 "" V -6550 3400 50  0001 C CNN
+	1    -6550 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	-6350 3300 -6250 3300
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5AFAAA90
+P 28000 2600
+F 0 "U?" H 28000 2755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 2400 50  0001 C CNN
+F 2 "" H 28650 2600 50  0001 C CNN
+F 3 "" H 28650 2600 50  0001 C CNN
+	2    28000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5AFAAA96
+P 27000 4400
+F 0 "U?" H 27000 4555 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 27000 4200 50  0001 C CNN
+F 2 "" H 27650 4400 50  0001 C CNN
+F 3 "" H 27650 4400 50  0001 C CNN
+	4    27000 4400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5AFAAA9C
+P 28000 3700
+F 0 "U?" H 28000 3787 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 3500 50  0001 C CNN
+F 2 "" H 28650 3700 50  0001 C CNN
+F 3 "" H 28650 3700 50  0001 C CNN
+	7    28000 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 24700 3700 0    50   Input ~ 0
+TL_A1_1
+Text GLabel 24700 3900 0    50   Input ~ 0
+TL_A2_1
+Wire Wire Line
+	28300 2600 28500 2600
+Wire Wire Line
+	27700 2600 27500 2600
+Text GLabel 27500 2600 0    50   Input ~ 0
++24V
+Wire Wire Line
+	26700 4400 26300 4400
+Text GLabel 24900 4400 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFAAACF
+P 25400 4400
+F 0 "U?" H 25250 4600 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 25400 4200 50  0001 C CNN
+F 2 "" H 26050 4400 50  0001 C CNN
+F 3 "" H 26050 4400 50  0001 C CNN
+	1    25400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25100 4400 24900 4400
+Wire Wire Line
+	25900 4400 25700 4400
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5AFAAAEF
+P 26100 4400
+F 0 "SW?" H 26100 4615 50  0000 C CNN
+F 1 "HEP Dropout" H 26100 4524 50  0000 C CNN
+F 2 "" H 26100 4600 50  0001 C CNN
+F 3 "" H 26100 4600 50  0001 C CNN
+	1    26100 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 29400 3700 2    50   Input ~ 0
+TL_B2_1
+Text GLabel 29400 3900 2    50   Input ~ 0
+TL_B1_1
+Wire Wire Line
+	24700 3900 29400 3900
+Wire Wire Line
+	27300 4400 27500 4400
+Wire Wire Line
+	-6850 5700 -4450 5700
+Wire Wire Line
+	-5850 4900 -5850 5300
+Connection ~ -5850 5300
+Wire Wire Line
+	-5850 5300 -4450 5300
+Wire Wire Line
+	-8450 4500 -8250 4500
+Wire Wire Line
+	-7650 4500 -6450 4500
+Wire Notes Line width 10
+	-7950 4850 -7950 4650
+Wire Wire Line
+	-6850 4900 -6650 4900
+Text GLabel -6650 4900 2    50   Input ~ 0
+-24V
+Text GLabel -8450 4900 0    50   Input ~ 0
++24V
+Wire Wire Line
+	-8450 4900 -8250 4900
+Wire Wire Line
+	-7650 4900 -7450 4900
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U7
+U 8 1 5B07983D
+P -7150 3300
+F 0 "U7" H -7150 3455 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H -7150 3100 50  0001 C CNN
+F 2 "" H -6500 3300 50  0001 C CNN
+F 3 "" H -6500 3300 50  0001 C CNN
+	8    -7150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-7650 3000 -7650 3300
+Wire Wire Line
+	-7650 3300 -7450 3300
+Connection ~ -7650 3000
+Wire Wire Line
+	-6850 3000 -6050 3000
+Wire Wire Line
+	-7650 6200 -7550 6200
+Wire Wire Line
+	-5950 6400 -5750 6400
+Connection ~ -8250 5500
+Connection ~ -8450 5300
+Wire Wire Line
+	-8250 5500 -7450 5500
+Wire Wire Line
+	-8850 5500 -8250 5500
+Wire Wire Line
+	-8450 5300 -7450 5300
+Wire Wire Line
+	-8850 5300 -8450 5300
+Text GLabel 24700 2900 0    50   Input ~ 0
+TL_A1_3
+Text GLabel 24700 3100 0    50   Input ~ 0
+TL_A2_3
+Text GLabel 29400 2900 2    50   Input ~ 0
+TL_B2_3
+Text GLabel 29400 3100 2    50   Input ~ 0
+TL_B1_3
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B0C3AA7
+P 28000 3100
+F 0 "U?" H 28000 3187 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 2900 50  0001 C CNN
+F 2 "" H 28650 3100 50  0001 C CNN
+F 3 "" H 28650 3100 50  0001 C CNN
+	6    28000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B0D2569
+P 28000 3400
+F 0 "U?" H 28000 3487 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 3200 50  0001 C CNN
+F 2 "" H 28650 3400 50  0001 C CNN
+F 3 "" H 28650 3400 50  0001 C CNN
+	5    28000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27700 3400 27500 3400
+Wire Wire Line
+	27500 3400 27500 3100
+Wire Wire Line
+	28300 3400 28500 3400
+Wire Wire Line
+	28500 3400 28500 3700
+Wire Wire Line
+	24700 2900 29400 2900
+Wire Wire Line
+	28500 2600 28500 3100
+Wire Wire Line
+	27500 3700 27500 4400
+Wire Wire Line
+	24300 3900 24100 3900
+Wire Wire Line
+	24100 3900 24100 3700
+Wire Wire Line
+	24100 3700 24300 3700
+Wire Wire Line
+	24300 3100 24100 3100
+Wire Wire Line
+	24100 3100 24100 2900
+Wire Wire Line
+	24100 2900 24300 2900
+Wire Wire Line
+	29800 2900 30000 2900
+Wire Wire Line
+	30000 2900 30000 3100
+Wire Wire Line
+	30000 3100 29800 3100
+Wire Wire Line
+	29800 3700 30000 3700
+Wire Wire Line
+	30000 3700 30000 3900
+Wire Wire Line
+	30000 3900 29800 3900
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B11994B
+P 28000 6200
+F 0 "U?" H 28000 6355 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 6000 50  0001 C CNN
+F 2 "" H 28650 6200 50  0001 C CNN
+F 3 "" H 28650 6200 50  0001 C CNN
+	2    28000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B119951
+P 28000 8200
+F 0 "U?" H 28000 8355 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 8000 50  0001 C CNN
+F 2 "" H 28650 8200 50  0001 C CNN
+F 3 "" H 28650 8200 50  0001 C CNN
+	4    28000 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B119957
+P 28000 7700
+F 0 "U?" H 28000 7787 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 7500 50  0001 C CNN
+F 2 "" H 28650 7700 50  0001 C CNN
+F 3 "" H 28650 7700 50  0001 C CNN
+	7    28000 7700
+	1    0    0    -1  
+$EndComp
+Text GLabel 24700 7500 0    50   Input ~ 0
+TL_A4_1
+Text GLabel 24700 7700 0    50   Input ~ 0
+TL_A4_3
+Wire Wire Line
+	28300 6200 28500 6200
+Wire Wire Line
+	27700 6200 27500 6200
+Text GLabel 27500 6200 0    50   Input ~ 0
++24V
+Text GLabel 25800 8600 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5B119964
+P 26300 8600
+F 0 "U?" H 26150 8800 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 26300 8400 50  0001 C CNN
+F 2 "" H 26950 8600 50  0001 C CNN
+F 3 "" H 26950 8600 50  0001 C CNN
+	1    26300 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	26000 8600 25800 8600
+Wire Wire Line
+	26800 8600 26600 8600
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5B11996C
+P 27000 8600
+F 0 "SW?" H 27000 8815 50  0000 C CNN
+F 1 "HEP Dropout" H 27000 8724 50  0000 C CNN
+F 2 "" H 27000 8800 50  0001 C CNN
+F 3 "" H 27000 8800 50  0001 C CNN
+	1    27000 8600
+	1    0    0    -1  
+$EndComp
+Text GLabel 29400 7500 2    50   Input ~ 0
+TL_B1_1
+Text GLabel 29400 7700 2    50   Input ~ 0
+TL_B1_3
+Wire Wire Line
+	27700 8200 27500 8200
+Text GLabel 24700 6700 0    50   Input ~ 0
+TL_A3_1
+Text GLabel 24700 6900 0    50   Input ~ 0
+TL_A3_3
+Text GLabel 29400 6700 2    50   Input ~ 0
+TL_B2_1
+Text GLabel 29400 6900 2    50   Input ~ 0
+TL_B2_3
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B11997D
+P 28000 6700
+F 0 "U?" H 28000 6787 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 6500 50  0001 C CNN
+F 2 "" H 28650 6700 50  0001 C CNN
+F 3 "" H 28650 6700 50  0001 C CNN
+	6    28000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B119984
+P 28000 7200
+F 0 "U?" H 28000 7287 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 7000 50  0001 C CNN
+F 2 "" H 28650 7200 50  0001 C CNN
+F 3 "" H 28650 7200 50  0001 C CNN
+	5    28000 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27700 7200 27500 7200
+Wire Wire Line
+	28300 7200 28500 7200
+Wire Wire Line
+	24700 6700 27500 6700
+Wire Wire Line
+	28500 6200 28500 6700
+Wire Wire Line
+	27500 7700 27500 8200
+Wire Wire Line
+	24350 6700 24000 6700
+Wire Wire Line
+	24000 6700 24000 7500
+Wire Wire Line
+	24000 7500 24250 7500
+Wire Wire Line
+	24350 6900 24100 6900
+Wire Wire Line
+	24100 6900 24100 7700
+Wire Wire Line
+	24100 7700 24250 7700
+Wire Wire Line
+	29750 7700 30100 7700
+Wire Wire Line
+	30100 7700 30100 6900
+Wire Wire Line
+	30100 6900 29850 6900
+Wire Wire Line
+	29750 7500 30000 7500
+Wire Wire Line
+	30000 7500 30000 6700
+Wire Wire Line
+	30000 6700 29850 6700
+Connection ~ 28500 3100
+Wire Wire Line
+	28500 3100 29400 3100
+Wire Wire Line
+	28300 3100 28500 3100
+Connection ~ 27500 3700
+Wire Wire Line
+	27500 3700 27700 3700
+Wire Wire Line
+	24700 3700 27500 3700
+Connection ~ 28500 3700
+Connection ~ 27500 3100
+Wire Wire Line
+	28500 3700 29400 3700
+Wire Wire Line
+	28300 3700 28500 3700
+Wire Wire Line
+	27500 3100 27700 3100
+Wire Wire Line
+	24700 3100 27500 3100
+Wire Wire Line
+	28300 7700 28500 7700
+Wire Wire Line
+	28500 7200 28500 7700
+Connection ~ 28500 7700
+Wire Wire Line
+	28500 7700 29400 7700
+Wire Wire Line
+	24700 7500 29400 7500
+Wire Wire Line
+	24700 7700 27500 7700
+Connection ~ 27500 7700
+Wire Wire Line
+	27500 7700 27700 7700
+Wire Wire Line
+	28300 8200 28500 8200
+Wire Wire Line
+	28500 8200 28500 8600
+Wire Wire Line
+	27200 8600 28500 8600
+Connection ~ 28500 6700
+Wire Wire Line
+	28500 6700 29400 6700
+Wire Wire Line
+	28300 6700 28500 6700
+Wire Wire Line
+	27500 7200 27500 6700
+Connection ~ 27500 6700
+Wire Wire Line
+	27500 6700 27700 6700
+Wire Wire Line
+	24700 6900 29400 6900
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B2585AF
+P 28000 9600
+F 0 "U?" H 28000 9755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 9400 50  0001 C CNN
+F 2 "" H 28650 9600 50  0001 C CNN
+F 3 "" H 28650 9600 50  0001 C CNN
+	2    28000 9600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B2585B5
+P 28000 11600
+F 0 "U?" H 28000 11755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 11400 50  0001 C CNN
+F 2 "" H 28650 11600 50  0001 C CNN
+F 3 "" H 28650 11600 50  0001 C CNN
+	4    28000 11600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B2585BB
+P 28000 11100
+F 0 "U?" H 28000 11187 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 10900 50  0001 C CNN
+F 2 "" H 28650 11100 50  0001 C CNN
+F 3 "" H 28650 11100 50  0001 C CNN
+	7    28000 11100
+	1    0    0    -1  
+$EndComp
+Text GLabel 24700 10900 0    50   Input ~ 0
+TL_A4_1
+Text GLabel 24700 11100 0    50   Input ~ 0
+TL_A4_3
+Wire Wire Line
+	28300 9600 28500 9600
+Text GLabel 28500 9600 2    50   Input ~ 0
++24V
+Text GLabel 25800 12000 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5B2585C7
+P 26300 12000
+F 0 "U?" H 26150 12200 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 26300 11800 50  0001 C CNN
+F 2 "" H 26950 12000 50  0001 C CNN
+F 3 "" H 26950 12000 50  0001 C CNN
+	1    26300 12000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	26000 12000 25800 12000
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5B2585CF
+P 31200 8600
+F 0 "SW?" H 31200 8815 50  0000 C CNN
+F 1 "HEP Dropout" H 31200 8724 50  0000 C CNN
+F 2 "" H 31200 8800 50  0001 C CNN
+F 3 "" H 31200 8800 50  0001 C CNN
+	1    31200 8600
+	1    0    0    -1  
+$EndComp
+Text GLabel 32500 10900 2    50   Input ~ 0
+TL_B1_1
+Text GLabel 32500 11100 2    50   Input ~ 0
+TL_B1_3
+Wire Wire Line
+	27700 11600 27500 11600
+Text GLabel 24700 10100 0    50   Input ~ 0
+TL_A3_1
+Text GLabel 24700 10300 0    50   Input ~ 0
+TL_A3_3
+Text GLabel 32500 10100 2    50   Input ~ 0
+TL_B2_1
+Text GLabel 32500 10300 2    50   Input ~ 0
+TL_B2_3
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B2585DC
+P 28000 10100
+F 0 "U?" H 28000 10187 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 9900 50  0001 C CNN
+F 2 "" H 28650 10100 50  0001 C CNN
+F 3 "" H 28650 10100 50  0001 C CNN
+	6    28000 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B2585E2
+P 28000 10600
+F 0 "U?" H 28000 10687 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 28000 10400 50  0001 C CNN
+F 2 "" H 28650 10600 50  0001 C CNN
+F 3 "" H 28650 10600 50  0001 C CNN
+	5    28000 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27700 10600 27500 10600
+Wire Wire Line
+	28300 10600 28500 10600
+Wire Wire Line
+	27500 11100 27500 11600
+Wire Wire Line
+	24700 10900 28500 10900
+Wire Wire Line
+	24700 11100 27500 11100
+Connection ~ 27500 11100
+Wire Wire Line
+	27500 11100 27700 11100
+Wire Wire Line
+	28300 11600 28500 11600
+Wire Wire Line
+	28500 11600 28500 12000
+Wire Wire Line
+	24700 10300 27500 10300
+Wire Wire Line
+	24100 11100 24250 11100
+Wire Wire Line
+	24100 10300 24100 11100
+Wire Wire Line
+	24350 10300 24100 10300
+Wire Wire Line
+	24000 10900 24250 10900
+Wire Wire Line
+	24000 10100 24000 10900
+Wire Wire Line
+	24350 10100 24000 10100
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B2AC498
+P 34950 8900
+F 0 "U?" H 34950 9055 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 34950 8700 50  0001 C CNN
+F 2 "" H 35600 8900 50  0001 C CNN
+F 3 "" H 35600 8900 50  0001 C CNN
+	2    34950 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35250 8900 35450 8900
+Wire Wire Line
+	34650 8900 34450 8900
+Text GLabel 34450 8900 0    50   Input ~ 0
++24V
+Wire Wire Line
+	35450 8900 35450 9400
+Wire Wire Line
+	26600 12000 28500 12000
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B2C56D8
+P 34900 12100
+F 0 "U?" H 34900 12255 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 34900 11900 50  0001 C CNN
+F 2 "" H 35550 12100 50  0001 C CNN
+F 3 "" H 35550 12100 50  0001 C CNN
+	4    34900 12100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	34600 12100 34400 12100
+Wire Wire Line
+	34400 11600 34400 12100
+Wire Wire Line
+	35200 12100 35400 12100
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B2D2266
+P 30100 9600
+F 0 "U?" H 30100 9755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 30100 9400 50  0001 C CNN
+F 2 "" H 30750 9600 50  0001 C CNN
+F 3 "" H 30750 9600 50  0001 C CNN
+	2    30100 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B2D226C
+P 30100 11600
+F 0 "U?" H 30100 11755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 30100 11400 50  0001 C CNN
+F 2 "" H 30750 11600 50  0001 C CNN
+F 3 "" H 30750 11600 50  0001 C CNN
+	4    30100 11600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B2D2272
+P 30100 10900
+F 0 "U?" H 30100 10987 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 30100 10700 50  0001 C CNN
+F 2 "" H 30750 10900 50  0001 C CNN
+F 3 "" H 30750 10900 50  0001 C CNN
+	7    30100 10900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	29800 9600 29600 9600
+Text GLabel 29600 9600 0    50   Input ~ 0
++24V
+Wire Wire Line
+	30400 11600 30600 11600
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B2D227C
+P 30100 10300
+F 0 "U?" H 30100 10387 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 30100 10100 50  0001 C CNN
+F 2 "" H 30750 10300 50  0001 C CNN
+F 3 "" H 30750 10300 50  0001 C CNN
+	6    30100 10300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B2D2282
+P 30100 10600
+F 0 "U?" H 30100 10687 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 30100 10400 50  0001 C CNN
+F 2 "" H 30750 10600 50  0001 C CNN
+F 3 "" H 30750 10600 50  0001 C CNN
+	5    30100 10600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	30400 10600 30600 10600
+Wire Wire Line
+	29800 10600 29600 10600
+Wire Wire Line
+	30600 11100 30600 11600
+Wire Wire Line
+	29800 11600 29600 11600
+Wire Wire Line
+	29600 11600 29600 12000
+Wire Wire Line
+	31500 12000 29600 12000
+Connection ~ 30600 11100
+Wire Wire Line
+	30600 11100 32500 11100
+Wire Wire Line
+	30400 10300 32500 10300
+Wire Wire Line
+	30400 10900 30600 10900
+Wire Wire Line
+	28300 11100 30600 11100
+Wire Wire Line
+	24700 10100 27500 10100
+Wire Wire Line
+	27500 9600 27500 10100
+Wire Wire Line
+	27500 9600 27700 9600
+Connection ~ 27500 10100
+Wire Wire Line
+	27500 10100 27700 10100
+Wire Wire Line
+	30400 9600 30600 9600
+Wire Wire Line
+	28300 10100 30600 10100
+Wire Wire Line
+	27500 10600 27500 10300
+Connection ~ 27500 10300
+Wire Wire Line
+	27500 10300 29600 10300
+Wire Wire Line
+	28500 10600 28500 10900
+Connection ~ 28500 10900
+Wire Wire Line
+	28500 10900 29800 10900
+Wire Wire Line
+	30600 9600 30600 10100
+Connection ~ 30600 10100
+Wire Wire Line
+	30600 10100 32500 10100
+Wire Wire Line
+	32850 11100 33200 11100
+Wire Wire Line
+	33200 11100 33200 10300
+Wire Wire Line
+	33200 10300 32950 10300
+Wire Wire Line
+	32850 10900 33100 10900
+Wire Wire Line
+	33100 10900 33100 10100
+Wire Wire Line
+	33100 10100 32950 10100
+Wire Wire Line
+	30600 10600 30600 10900
+Connection ~ 30600 10900
+Wire Wire Line
+	30600 10900 32500 10900
+Wire Wire Line
+	29600 10600 29600 10300
+Connection ~ 29600 10300
+Wire Wire Line
+	29600 10300 29800 10300
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B450EB7
+P 5400 4150
+F 0 "U?" H 5400 4305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5400 3950 50  0001 C CNN
+F 2 "" H 6050 4150 50  0001 C CNN
+F 3 "" H 6050 4150 50  0001 C CNN
+	2    5400 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B450EBD
+P 5400 6150
+F 0 "U?" H 5400 6305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5400 5950 50  0001 C CNN
+F 2 "" H 6050 6150 50  0001 C CNN
+F 3 "" H 6050 6150 50  0001 C CNN
+	4    5400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B450EC3
+P 5400 5650
+F 0 "U?" H 5400 5737 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5400 5450 50  0001 C CNN
+F 2 "" H 6050 5650 50  0001 C CNN
+F 3 "" H 6050 5650 50  0001 C CNN
+	7    5400 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 5450 0    50   Input ~ 0
+TL_A4_1
+Text GLabel 3200 5650 0    50   Input ~ 0
+TL_A4_3
+Wire Wire Line
+	5700 4150 5900 4150
+Text GLabel 3200 6550 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 1 1 5B450ECE
+P 3700 6550
+F 0 "K?" H 3700 6750 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 3700 6350 50  0001 C CNN
+F 2 "" H 4350 6550 50  0001 C CNN
+F 3 "" H 4350 6550 50  0001 C CNN
+	1    3700 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6550 3200 6550
+Text GLabel 13600 5450 2    50   Input ~ 0
+TL_B1_1
+Text GLabel 13600 5650 2    50   Input ~ 0
+TL_B1_3
+Wire Wire Line
+	5100 6150 4900 6150
+Text GLabel 3200 4650 0    50   Input ~ 0
+TL_A3_1
+Text GLabel 3200 4850 0    50   Input ~ 0
+TL_A3_3
+Text GLabel 13600 4650 2    50   Input ~ 0
+TL_B2_1
+Text GLabel 13600 4850 2    50   Input ~ 0
+TL_B2_3
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B450EDD
+P 5400 4650
+F 0 "U?" H 5400 4737 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5400 4450 50  0001 C CNN
+F 2 "" H 6050 4650 50  0001 C CNN
+F 3 "" H 6050 4650 50  0001 C CNN
+	6    5400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B450EE3
+P 5400 5150
+F 0 "U?" H 5400 5237 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5400 4950 50  0001 C CNN
+F 2 "" H 6050 5150 50  0001 C CNN
+F 3 "" H 6050 5150 50  0001 C CNN
+	5    5400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5150 4900 5150
+Wire Wire Line
+	5700 5150 5900 5150
+Wire Wire Line
+	4900 5650 4900 6150
+Wire Wire Line
+	3200 5650 4900 5650
+Connection ~ 4900 5650
+Wire Wire Line
+	4900 5650 5100 5650
+Wire Wire Line
+	5700 6150 5900 6150
+Wire Wire Line
+	5900 6150 5900 6550
+Wire Wire Line
+	3200 4850 4900 4850
+Wire Wire Line
+	4000 6550 5900 6550
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B450EFA
+P 11200 4150
+F 0 "U?" H 11200 4305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11200 3950 50  0001 C CNN
+F 2 "" H 11850 4150 50  0001 C CNN
+F 3 "" H 11850 4150 50  0001 C CNN
+	2    11200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B450F00
+P 11200 6150
+F 0 "U?" H 11200 6305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11200 5950 50  0001 C CNN
+F 2 "" H 11850 6150 50  0001 C CNN
+F 3 "" H 11850 6150 50  0001 C CNN
+	4    11200 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B450F06
+P 11200 5450
+F 0 "U?" H 11200 5537 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11200 5250 50  0001 C CNN
+F 2 "" H 11850 5450 50  0001 C CNN
+F 3 "" H 11850 5450 50  0001 C CNN
+	7    11200 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 4150 10700 4150
+Wire Wire Line
+	11500 6150 11700 6150
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B450F0F
+P 11200 4850
+F 0 "U?" H 11200 4937 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11200 4650 50  0001 C CNN
+F 2 "" H 11850 4850 50  0001 C CNN
+F 3 "" H 11850 4850 50  0001 C CNN
+	6    11200 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B450F15
+P 11200 5150
+F 0 "U?" H 11200 5237 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11200 4950 50  0001 C CNN
+F 2 "" H 11850 5150 50  0001 C CNN
+F 3 "" H 11850 5150 50  0001 C CNN
+	5    11200 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 5150 11700 5150
+Wire Wire Line
+	10900 5150 10700 5150
+Wire Wire Line
+	11700 5650 11700 6150
+Wire Wire Line
+	10900 6150 10700 6150
+Wire Wire Line
+	10700 6150 10700 6550
+Connection ~ 11700 5650
+Wire Wire Line
+	11700 5650 13600 5650
+Wire Wire Line
+	11500 4850 11700 4850
+Wire Wire Line
+	11500 5450 11700 5450
+Wire Wire Line
+	5700 5650 6500 5650
+Wire Wire Line
+	3200 4650 4900 4650
+Wire Wire Line
+	4900 4150 4900 4650
+Wire Wire Line
+	4900 4150 5100 4150
+Connection ~ 4900 4650
+Wire Wire Line
+	4900 4650 5100 4650
+Wire Wire Line
+	11500 4150 11700 4150
+Wire Wire Line
+	5700 4650 6300 4650
+Wire Wire Line
+	4900 5150 4900 4850
+Connection ~ 4900 4850
+Wire Wire Line
+	4900 4850 6500 4850
+Wire Wire Line
+	5900 5150 5900 5300
+Wire Wire Line
+	11700 4150 11700 4650
+Connection ~ 11700 4650
+Wire Wire Line
+	11700 4650 13600 4650
+Wire Wire Line
+	11700 5150 11700 5450
+Connection ~ 11700 5450
+Wire Wire Line
+	11700 5450 13600 5450
+Wire Wire Line
+	2300 4650 2100 4650
+Wire Wire Line
+	2100 4650 2100 4850
+Wire Wire Line
+	2100 4850 2300 4850
+Wire Wire Line
+	2300 5450 2100 5450
+Wire Wire Line
+	2100 5450 2100 5650
+Wire Wire Line
+	2100 5650 2300 5650
+Wire Wire Line
+	14000 4650 14200 4650
+Wire Wire Line
+	14200 4650 14200 4850
+Wire Wire Line
+	14200 4850 14000 4850
+Wire Wire Line
+	14000 5450 14200 5450
+Wire Wire Line
+	14200 5450 14200 5650
+Wire Wire Line
+	14200 5650 14000 5650
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B54510B
+P 7000 4150
+F 0 "U?" H 7000 4305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 3950 50  0001 C CNN
+F 2 "" H 7650 4150 50  0001 C CNN
+F 3 "" H 7650 4150 50  0001 C CNN
+	2    7000 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B545111
+P 7000 6150
+F 0 "U?" H 7000 6305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 5950 50  0001 C CNN
+F 2 "" H 7650 6150 50  0001 C CNN
+F 3 "" H 7650 6150 50  0001 C CNN
+	4    7000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B545117
+P 7000 5650
+F 0 "U?" H 7000 5737 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 5450 50  0001 C CNN
+F 2 "" H 7650 5650 50  0001 C CNN
+F 3 "" H 7650 5650 50  0001 C CNN
+	7    7000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4150 7500 4150
+Wire Wire Line
+	6700 6150 6500 6150
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B545120
+P 7000 4650
+F 0 "U?" H 7000 4737 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 4450 50  0001 C CNN
+F 2 "" H 7650 4650 50  0001 C CNN
+F 3 "" H 7650 4650 50  0001 C CNN
+	6    7000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B545126
+P 7000 5050
+F 0 "U?" H 7000 5137 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 4850 50  0001 C CNN
+F 2 "" H 7650 5050 50  0001 C CNN
+F 3 "" H 7650 5050 50  0001 C CNN
+	5    7000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5050 6500 5050
+Wire Wire Line
+	6500 5650 6500 6150
+Wire Wire Line
+	6500 5650 6700 5650
+Wire Wire Line
+	7300 6150 7500 6150
+Wire Wire Line
+	7500 6150 7500 6550
+Wire Wire Line
+	6300 4150 6300 4650
+Wire Wire Line
+	6300 4150 6700 4150
+Wire Wire Line
+	6300 4650 6700 4650
+Wire Wire Line
+	6500 5050 6500 4850
+Connection ~ 6300 4650
+Connection ~ 6500 4850
+Wire Wire Line
+	6500 4850 9300 4850
+Connection ~ 6500 5650
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 8 1 5B5C5147
+P 7000 5250
+F 0 "U?" H 7000 5337 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 5050 50  0001 C CNN
+F 2 "" H 7650 5250 50  0001 C CNN
+F 3 "" H 7650 5250 50  0001 C CNN
+	8    7000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5250 6300 5250
+Wire Wire Line
+	6300 5250 6300 4650
+Wire Wire Line
+	7300 5250 7400 5250
+Wire Wire Line
+	7300 5050 7500 5050
+Wire Wire Line
+	7500 5050 7500 5350
+Wire Wire Line
+	7500 5350 6500 5350
+Wire Wire Line
+	6500 5350 6500 5650
+Wire Wire Line
+	2600 5650 2750 5650
+Wire Wire Line
+	2600 4850 2600 5650
+Wire Wire Line
+	2850 4850 2600 4850
+Wire Wire Line
+	2500 5450 2750 5450
+Wire Wire Line
+	2500 4650 2500 5450
+Wire Wire Line
+	2850 4650 2500 4650
+Wire Wire Line
+	7500 6550 5900 6550
+Connection ~ 5900 6550
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B6FF0A1
+P 9600 4150
+F 0 "U?" H 9600 4305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 3950 50  0001 C CNN
+F 2 "" H 10250 4150 50  0001 C CNN
+F 3 "" H 10250 4150 50  0001 C CNN
+	2    9600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B6FF0A7
+P 9600 6150
+F 0 "U?" H 9600 6305 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 5950 50  0001 C CNN
+F 2 "" H 10250 6150 50  0001 C CNN
+F 3 "" H 10250 6150 50  0001 C CNN
+	4    9600 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5B6FF0AD
+P 9600 5450
+F 0 "U?" H 9600 5537 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 5250 50  0001 C CNN
+F 2 "" H 10250 5450 50  0001 C CNN
+F 3 "" H 10250 5450 50  0001 C CNN
+	7    9600 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4150 9100 4150
+Wire Wire Line
+	9900 6150 10100 6150
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5B6FF0B6
+P 9600 4850
+F 0 "U?" H 9600 4937 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 4650 50  0001 C CNN
+F 2 "" H 10250 4850 50  0001 C CNN
+F 3 "" H 10250 4850 50  0001 C CNN
+	6    9600 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5B6FF0BC
+P 9600 5050
+F 0 "U?" H 9600 5137 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 4850 50  0001 C CNN
+F 2 "" H 10250 5050 50  0001 C CNN
+F 3 "" H 10250 5050 50  0001 C CNN
+	5    9600 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 5050 10100 5050
+Wire Wire Line
+	10100 5650 10100 6150
+Wire Wire Line
+	9300 6150 9100 6150
+Wire Wire Line
+	9100 6150 9100 6550
+Wire Wire Line
+	10300 4150 10300 4650
+Wire Wire Line
+	10300 4150 9900 4150
+Wire Wire Line
+	10100 5050 10100 4850
+Connection ~ 10300 4650
+Connection ~ 10100 5650
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 8 1 5B6FF0D0
+P 9600 5250
+F 0 "U?" H 9600 5337 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 5050 50  0001 C CNN
+F 2 "" H 10250 5250 50  0001 C CNN
+F 3 "" H 10250 5250 50  0001 C CNN
+	8    9600 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 5250 10300 5250
+Wire Wire Line
+	10300 5250 10300 4650
+Wire Wire Line
+	9300 5250 9200 5250
+Wire Wire Line
+	9200 5250 9200 5300
+Wire Wire Line
+	9300 5050 9100 5050
+Wire Wire Line
+	9100 5050 9100 5350
+Wire Wire Line
+	9100 5350 10100 5350
+Wire Wire Line
+	10100 5350 10100 5650
+Wire Wire Line
+	9100 6550 10700 6550
+Connection ~ 10100 4850
+Wire Wire Line
+	10300 4650 11700 4650
+Wire Wire Line
+	10100 5650 11700 5650
+Wire Wire Line
+	9900 4850 10100 4850
+Wire Wire Line
+	9900 5450 10300 5450
+Wire Wire Line
+	7300 4650 10300 4650
+Wire Wire Line
+	7300 5650 10100 5650
+Wire Wire Line
+	14400 5650 14750 5650
+Wire Wire Line
+	14750 5650 14750 4850
+Wire Wire Line
+	14750 4850 14500 4850
+Wire Wire Line
+	14400 5450 14650 5450
+Wire Wire Line
+	14650 5450 14650 4650
+Wire Wire Line
+	14650 4650 14500 4650
+Text GLabel 3200 6950 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 1 1 5B7FD453
+P 4500 6950
+F 0 "K?" H 4500 7150 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 4500 6750 50  0001 C CNN
+F 2 "" H 5150 6950 50  0001 C CNN
+F 3 "" H 5150 6950 50  0001 C CNN
+	1    4500 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6950 3200 6950
+Wire Wire Line
+	9100 6550 8800 6550
+Wire Wire Line
+	8800 6550 8800 6950
+Wire Wire Line
+	8800 6950 4800 6950
+Connection ~ 9100 6550
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 1 1 5B8C2D32
+P 5400 3750
+F 0 "K?" H 5400 3950 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5400 3550 50  0001 C CNN
+F 2 "" H 6050 3750 50  0001 C CNN
+F 3 "" H 6050 3750 50  0001 C CNN
+	1    5400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 1 1 5B8C2DC2
+P 7000 3750
+F 0 "K?" H 7000 3950 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7000 3550 50  0001 C CNN
+F 2 "" H 7650 3750 50  0001 C CNN
+F 3 "" H 7650 3750 50  0001 C CNN
+	1    7000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 1 1 5B8C2E34
+P 9600 3750
+F 0 "K?" H 9600 3950 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9600 3550 50  0001 C CNN
+F 2 "" H 10250 3750 50  0001 C CNN
+F 3 "" H 10250 3750 50  0001 C CNN
+	1    9600 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 1 1 5B8C2EDA
+P 11200 3750
+F 0 "K?" H 11200 3950 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11200 3550 50  0001 C CNN
+F 2 "" H 11850 3750 50  0001 C CNN
+F 3 "" H 11850 3750 50  0001 C CNN
+	1    11200 3750
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line width 10
+	5400 3900 5400 6100
+Wire Notes Line width 10
+	7000 3900 7000 6100
+Wire Notes Line width 10
+	9600 3900 9600 6100
+Wire Notes Line width 10
+	11200 3900 11200 6100
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5B96901D
+P 7800 2050
+F 0 "SW?" H 7800 2335 50  0000 C CNN
+F 1 "A-end TLC style" H 7800 2244 50  0000 C CNN
+F 2 "" H 7800 2050 50  0001 C CNN
+F 3 "" H 7800 2050 50  0001 C CNN
+	1    7800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5B96911A
+P 7800 2550
+F 0 "SW?" H 7800 2835 50  0001 C CNN
+F 1 "SW_SPDT_MSM" H 7800 2743 50  0001 C CNN
+F 2 "" H 7800 2550 50  0001 C CNN
+F 3 "" H 7800 2550 50  0001 C CNN
+	1    7800 2550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7800 2050 7800 2500
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5B9ACDE1
+P 8700 2050
+F 0 "SW?" H 8700 2335 50  0000 C CNN
+F 1 "B-end TLC style" H 8700 2244 50  0000 C CNN
+F 2 "" H 8700 2050 50  0001 C CNN
+F 3 "" H 8700 2050 50  0001 C CNN
+	1    8700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5B9ACDE8
+P 8700 2550
+F 0 "SW?" H 8700 2835 50  0001 C CNN
+F 1 "SW_SPDT_MSM" H 8700 2743 50  0001 C CNN
+F 2 "" H 8700 2550 50  0001 C CNN
+F 3 "" H 8700 2550 50  0001 C CNN
+	1    8700 2550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8700 2050 8700 2500
+Wire Wire Line
+	8000 1950 8250 1950
+Wire Wire Line
+	8250 1950 8250 2050
+Wire Wire Line
+	8250 2050 8500 2050
+Wire Wire Line
+	8000 2150 8250 2150
+Wire Wire Line
+	8250 2150 8250 2050
+Connection ~ 8250 2050
+Wire Wire Line
+	8900 1950 9150 1950
+Wire Wire Line
+	5700 3750 5900 3750
+Wire Wire Line
+	7300 3750 7500 3750
+Wire Wire Line
+	9300 3750 9100 3750
+Wire Wire Line
+	10900 3750 10700 3750
+Text Notes 7500 2450 0    50   ~ 0
+Amtrak
+Text Notes 7300 2700 0    50   ~ 0
+MRM Legacy
+Wire Wire Line
+	9150 2150 9150 2300
+Wire Wire Line
+	9150 1950 9150 2150
+Connection ~ 9150 2150
+Wire Wire Line
+	9150 2150 8900 2150
+Wire Wire Line
+	7400 2550 7600 2550
+Wire Wire Line
+	7400 2300 7400 2550
+Wire Wire Line
+	9150 2300 8400 2300
+Wire Wire Line
+	8000 2450 8200 2450
+Wire Wire Line
+	8200 2450 8200 2850
+Wire Wire Line
+	8200 2850 4900 2850
+Wire Wire Line
+	4900 2850 4900 3750
+Wire Wire Line
+	4900 3750 5100 3750
+Wire Wire Line
+	8500 2550 8400 2550
+Wire Wire Line
+	8400 2550 8400 2300
+Connection ~ 8400 2300
+Wire Wire Line
+	8400 2300 7400 2300
+Wire Wire Line
+	8000 2650 8100 2650
+Wire Wire Line
+	8100 2650 8100 3050
+Wire Wire Line
+	8100 3050 6500 3050
+Wire Wire Line
+	6500 3050 6500 3750
+Wire Wire Line
+	6500 3750 6700 3750
+Wire Wire Line
+	8900 2650 10100 2650
+Wire Wire Line
+	10100 2650 10100 3750
+Wire Wire Line
+	10100 3750 9900 3750
+Wire Wire Line
+	8900 2450 11700 2450
+Wire Wire Line
+	11700 2450 11700 3750
+Wire Wire Line
+	11700 3750 11500 3750
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5AFA6B53
+P 5450 15500
+F 0 "U?" H 5450 15655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5450 15300 50  0001 C CNN
+F 2 "" H 6100 15500 50  0001 C CNN
+F 3 "" H 6100 15500 50  0001 C CNN
+	2    5450 15500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5AFA6B59
+P 5450 17500
+F 0 "U?" H 5450 17655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5450 17300 50  0001 C CNN
+F 2 "" H 6100 17500 50  0001 C CNN
+F 3 "" H 6100 17500 50  0001 C CNN
+	4    5450 17500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5AFA6B5F
+P 5450 17000
+F 0 "U?" H 5450 17087 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5450 16800 50  0001 C CNN
+F 2 "" H 6100 17000 50  0001 C CNN
+F 3 "" H 6100 17000 50  0001 C CNN
+	7    5450 17000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 16800 0    50   Input ~ 0
+TL_A4_1
+Text GLabel 3250 17000 0    50   Input ~ 0
+TL_A4_3
+Wire Wire Line
+	5750 15500 5950 15500
+Text GLabel 5950 15500 2    50   Input ~ 0
++24V
+Text GLabel 3250 17900 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFA6B6A
+P 3750 17900
+F 0 "U?" H 3600 18100 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 3750 17700 50  0001 C CNN
+F 2 "" H 4400 17900 50  0001 C CNN
+F 3 "" H 4400 17900 50  0001 C CNN
+	1    3750 17900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 17900 3250 17900
+Text GLabel 13650 16800 2    50   Input ~ 0
+TL_B1_1
+Text GLabel 13650 17000 2    50   Input ~ 0
+TL_B1_3
+Wire Wire Line
+	5150 17500 4950 17500
+Text GLabel 3250 16000 0    50   Input ~ 0
+TL_A3_1
+Text GLabel 3250 16200 0    50   Input ~ 0
+TL_A3_3
+Text GLabel 13650 16000 2    50   Input ~ 0
+TL_B2_1
+Text GLabel 13650 16200 2    50   Input ~ 0
+TL_B2_3
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5AFA6B78
+P 5450 16000
+F 0 "U?" H 5450 16087 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5450 15800 50  0001 C CNN
+F 2 "" H 6100 16000 50  0001 C CNN
+F 3 "" H 6100 16000 50  0001 C CNN
+	6    5450 16000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5AFA6B7E
+P 5450 16500
+F 0 "U?" H 5450 16587 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5450 16300 50  0001 C CNN
+F 2 "" H 6100 16500 50  0001 C CNN
+F 3 "" H 6100 16500 50  0001 C CNN
+	5    5450 16500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 16500 4950 16500
+Wire Wire Line
+	5750 16500 5950 16500
+Wire Wire Line
+	4950 17000 4950 17500
+Wire Wire Line
+	3250 16800 5950 16800
+Wire Wire Line
+	3250 17000 4950 17000
+Connection ~ 4950 17000
+Wire Wire Line
+	4950 17000 5150 17000
+Wire Wire Line
+	5750 17500 5950 17500
+Wire Wire Line
+	5950 17500 5950 17900
+Wire Wire Line
+	3250 16200 4950 16200
+Wire Wire Line
+	4050 17900 5950 17900
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5AFA6B8F
+P 11250 15500
+F 0 "U?" H 11250 15655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11250 15300 50  0001 C CNN
+F 2 "" H 11900 15500 50  0001 C CNN
+F 3 "" H 11900 15500 50  0001 C CNN
+	2    11250 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5AFA6B95
+P 11250 17500
+F 0 "U?" H 11250 17655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11250 17300 50  0001 C CNN
+F 2 "" H 11900 17500 50  0001 C CNN
+F 3 "" H 11900 17500 50  0001 C CNN
+	4    11250 17500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5AFA6B9B
+P 11250 16800
+F 0 "U?" H 11250 16887 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11250 16600 50  0001 C CNN
+F 2 "" H 11900 16800 50  0001 C CNN
+F 3 "" H 11900 16800 50  0001 C CNN
+	7    11250 16800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 15500 10750 15500
+Text GLabel 10750 15500 0    50   Input ~ 0
++24V
+Wire Wire Line
+	11550 17500 11750 17500
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5AFA6BA4
+P 11250 16200
+F 0 "U?" H 11250 16287 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11250 16000 50  0001 C CNN
+F 2 "" H 11900 16200 50  0001 C CNN
+F 3 "" H 11900 16200 50  0001 C CNN
+	6    11250 16200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5AFA6BAA
+P 11250 16500
+F 0 "U?" H 11250 16587 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11250 16300 50  0001 C CNN
+F 2 "" H 11900 16500 50  0001 C CNN
+F 3 "" H 11900 16500 50  0001 C CNN
+	5    11250 16500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 16500 10750 16500
+Wire Wire Line
+	11550 16500 11750 16500
+Wire Wire Line
+	11750 17000 11750 17500
+Wire Wire Line
+	10950 17500 10750 17500
+Wire Wire Line
+	10750 17500 10750 17900
+Connection ~ 11750 17000
+Wire Wire Line
+	11750 17000 13650 17000
+Wire Wire Line
+	11550 16200 13650 16200
+Wire Wire Line
+	5750 17000 6550 17000
+Wire Wire Line
+	3250 16000 4950 16000
+Wire Wire Line
+	4950 15500 4950 16000
+Wire Wire Line
+	4950 15500 5150 15500
+Connection ~ 4950 16000
+Wire Wire Line
+	4950 16000 5150 16000
+Wire Wire Line
+	11550 15500 11750 15500
+Wire Wire Line
+	5750 16000 6350 16000
+Wire Wire Line
+	4950 16500 4950 16200
+Connection ~ 4950 16200
+Wire Wire Line
+	4950 16200 6550 16200
+Wire Wire Line
+	5950 16500 5950 16800
+Connection ~ 5950 16800
+Wire Wire Line
+	11750 15500 11750 16000
+Connection ~ 11750 16000
+Wire Wire Line
+	11750 16000 13650 16000
+Wire Wire Line
+	10750 16500 10750 16800
+Wire Wire Line
+	11750 16500 11750 16200
+Wire Wire Line
+	2350 16000 2150 16000
+Wire Wire Line
+	2150 16000 2150 16200
+Wire Wire Line
+	2150 16200 2350 16200
+Wire Wire Line
+	2350 16800 2150 16800
+Wire Wire Line
+	2150 16800 2150 17000
+Wire Wire Line
+	2150 17000 2350 17000
+Wire Wire Line
+	14050 16000 14250 16000
+Wire Wire Line
+	14250 16000 14250 16200
+Wire Wire Line
+	14250 16200 14050 16200
+Wire Wire Line
+	14050 16800 14250 16800
+Wire Wire Line
+	14250 16800 14250 17000
+Wire Wire Line
+	14250 17000 14050 17000
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5AFA6BDB
+P 7050 15500
+F 0 "U?" H 7050 15655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 15300 50  0001 C CNN
+F 2 "" H 7700 15500 50  0001 C CNN
+F 3 "" H 7700 15500 50  0001 C CNN
+	2    7050 15500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5AFA6BE1
+P 7050 17500
+F 0 "U?" H 7050 17655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 17300 50  0001 C CNN
+F 2 "" H 7700 17500 50  0001 C CNN
+F 3 "" H 7700 17500 50  0001 C CNN
+	4    7050 17500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5AFA6BE7
+P 7050 17000
+F 0 "U?" H 7050 17087 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 16800 50  0001 C CNN
+F 2 "" H 7700 17000 50  0001 C CNN
+F 3 "" H 7700 17000 50  0001 C CNN
+	7    7050 17000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 15500 7550 15500
+Text GLabel 7550 15500 2    50   Input ~ 0
++24V
+Wire Wire Line
+	6750 17500 6550 17500
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5AFA6BF0
+P 7050 16000
+F 0 "U?" H 7050 16087 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 15800 50  0001 C CNN
+F 2 "" H 7700 16000 50  0001 C CNN
+F 3 "" H 7700 16000 50  0001 C CNN
+	6    7050 16000
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5AFA6BF6
+P 7050 16400
+F 0 "U?" H 7050 16487 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 16200 50  0001 C CNN
+F 2 "" H 7700 16400 50  0001 C CNN
+F 3 "" H 7700 16400 50  0001 C CNN
+	5    7050 16400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 16400 6550 16400
+Wire Wire Line
+	6550 17000 6550 17500
+Wire Wire Line
+	6550 17000 6750 17000
+Wire Wire Line
+	7350 17500 7550 17500
+Wire Wire Line
+	7550 17500 7550 17900
+Wire Wire Line
+	6350 15500 6350 16000
+Wire Wire Line
+	6350 15500 6750 15500
+Wire Wire Line
+	6350 16000 6750 16000
+Wire Wire Line
+	6550 16400 6550 16200
+Connection ~ 6350 16000
+Connection ~ 6550 16200
+Wire Wire Line
+	6550 16200 9350 16200
+Connection ~ 6550 17000
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 8 1 5AFA6C09
+P 7050 16600
+F 0 "U?" H 7050 16687 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 16400 50  0001 C CNN
+F 2 "" H 7700 16600 50  0001 C CNN
+F 3 "" H 7700 16600 50  0001 C CNN
+	8    7050 16600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 16600 6350 16600
+Wire Wire Line
+	6350 16600 6350 16000
+Wire Wire Line
+	5950 16800 7750 16800
+Wire Wire Line
+	7350 16600 7750 16600
+Wire Wire Line
+	7750 16600 7750 16800
+Connection ~ 7750 16800
+Wire Wire Line
+	7750 16800 8950 16800
+Wire Wire Line
+	7350 16400 7550 16400
+Wire Wire Line
+	7550 16400 7550 16700
+Wire Wire Line
+	7550 16700 6550 16700
+Wire Wire Line
+	6550 16700 6550 17000
+Wire Wire Line
+	2650 17000 2800 17000
+Wire Wire Line
+	2650 16200 2650 17000
+Wire Wire Line
+	2900 16200 2650 16200
+Wire Wire Line
+	2550 16800 2800 16800
+Wire Wire Line
+	2550 16000 2550 16800
+Wire Wire Line
+	2900 16000 2550 16000
+Wire Wire Line
+	7550 17900 5950 17900
+Connection ~ 5950 17900
+Wire Wire Line
+	9350 15500 9150 15500
+Text GLabel 9150 15500 0    50   Input ~ 0
++24V
+Wire Wire Line
+	9950 17500 10150 17500
+Wire Wire Line
+	9950 16400 10150 16400
+Wire Wire Line
+	10150 17000 10150 17500
+Wire Wire Line
+	9350 17500 9150 17500
+Wire Wire Line
+	9150 17500 9150 17900
+Wire Wire Line
+	10350 15500 10350 16000
+Wire Wire Line
+	10350 15500 9950 15500
+Wire Wire Line
+	10150 16400 10150 16200
+Connection ~ 10350 16000
+Connection ~ 10150 17000
+Wire Wire Line
+	9950 16600 10350 16600
+Wire Wire Line
+	10350 16600 10350 16000
+Wire Wire Line
+	9350 16600 8950 16600
+Wire Wire Line
+	8950 16600 8950 16800
+Wire Wire Line
+	9350 16400 9150 16400
+Wire Wire Line
+	9150 16400 9150 16700
+Wire Wire Line
+	10150 16700 10150 17000
+Wire Wire Line
+	9150 17900 10750 17900
+Connection ~ 8950 16800
+Wire Wire Line
+	8950 16800 9350 16800
+Connection ~ 10150 16200
+Wire Wire Line
+	10350 16000 11750 16000
+Wire Wire Line
+	10150 17000 11750 17000
+Wire Wire Line
+	9950 16200 10150 16200
+Wire Wire Line
+	9950 16800 10950 16800
+Wire Wire Line
+	14450 17000 14800 17000
+Wire Wire Line
+	14800 17000 14800 16200
+Wire Wire Line
+	14800 16200 14550 16200
+Wire Wire Line
+	14450 16800 14700 16800
+Wire Wire Line
+	14700 16800 14700 16000
+Wire Wire Line
+	14700 16000 14550 16000
+Text GLabel 3250 18300 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFA6C6C
+P 4550 18300
+F 0 "U?" H 4400 18500 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 4550 18100 50  0001 C CNN
+F 2 "" H 5200 18300 50  0001 C CNN
+F 3 "" H 5200 18300 50  0001 C CNN
+	1    4550 18300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 18300 3250 18300
+Wire Wire Line
+	9150 17900 8850 17900
+Wire Wire Line
+	8850 17900 8850 18300
+Wire Wire Line
+	8850 18300 4850 18300
+Connection ~ 9150 17900
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFA6C77
+P 5450 15100
+F 0 "U?" H 5450 15300 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5450 14900 50  0001 C CNN
+F 2 "" H 6100 15100 50  0001 C CNN
+F 3 "" H 6100 15100 50  0001 C CNN
+	1    5450 15100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFA6C7D
+P 7050 15100
+F 0 "U?" H 7050 15300 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 7050 14900 50  0001 C CNN
+F 2 "" H 7700 15100 50  0001 C CNN
+F 3 "" H 7700 15100 50  0001 C CNN
+	1    7050 15100
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFA6C89
+P 11250 15100
+F 0 "U?" H 11250 15300 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 11250 14900 50  0001 C CNN
+F 2 "" H 11900 15100 50  0001 C CNN
+F 3 "" H 11900 15100 50  0001 C CNN
+	1    11250 15100
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line width 10
+	5450 15250 5450 17450
+Wire Notes Line width 10
+	7050 15250 7050 17450
+Wire Notes Line width 10
+	11250 15250 11250 17450
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5AFA6C93
+P 7850 13400
+F 0 "SW?" H 7850 13685 50  0000 C CNN
+F 1 "A-end TLC style" H 7850 13594 50  0000 C CNN
+F 2 "" H 7850 13400 50  0001 C CNN
+F 3 "" H 7850 13400 50  0001 C CNN
+	1    7850 13400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5AFA6C99
+P 7850 13900
+F 0 "SW?" H 7850 14185 50  0001 C CNN
+F 1 "SW_SPDT_MSM" H 7850 14093 50  0001 C CNN
+F 2 "" H 7850 13900 50  0001 C CNN
+F 3 "" H 7850 13900 50  0001 C CNN
+	1    7850 13900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7850 13400 7850 13850
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5AFA6CA0
+P 8750 13400
+F 0 "SW?" H 8750 13685 50  0000 C CNN
+F 1 "B-end TLC style" H 8750 13594 50  0000 C CNN
+F 2 "" H 8750 13400 50  0001 C CNN
+F 3 "" H 8750 13400 50  0001 C CNN
+	1    8750 13400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT_MSM SW?
+U 1 1 5AFA6CA6
+P 8750 13900
+F 0 "SW?" H 8750 14185 50  0001 C CNN
+F 1 "SW_SPDT_MSM" H 8750 14093 50  0001 C CNN
+F 2 "" H 8750 13900 50  0001 C CNN
+F 3 "" H 8750 13900 50  0001 C CNN
+	1    8750 13900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8750 13400 8750 13850
+Wire Wire Line
+	7450 13400 7650 13400
+Wire Wire Line
+	8050 13300 8300 13300
+Wire Wire Line
+	8300 13300 8300 13400
+Wire Wire Line
+	8300 13400 8550 13400
+Wire Wire Line
+	8050 13500 8300 13500
+Wire Wire Line
+	8300 13500 8300 13400
+Connection ~ 8300 13400
+Wire Wire Line
+	8950 13300 9200 13300
+Wire Wire Line
+	5750 15100 5950 15100
+Text GLabel 5950 15100 2    50   Input ~ 0
++24V
+Wire Wire Line
+	7350 15100 7550 15100
+Text GLabel 7550 15100 2    50   Input ~ 0
++24V
+Wire Wire Line
+	9350 15100 9150 15100
+Text GLabel 9150 15100 0    50   Input ~ 0
++24V
+Wire Wire Line
+	10950 15100 10750 15100
+Text GLabel 10750 15100 0    50   Input ~ 0
++24V
+Text GLabel 7450 13400 0    50   Input ~ 0
+-24V
+Text Notes 7550 13800 0    50   ~ 0
+Amtrak
+Text Notes 7350 14050 0    50   ~ 0
+MRM Legacy
+Wire Wire Line
+	9200 13500 9200 13650
+Wire Wire Line
+	9200 13300 9200 13500
+Connection ~ 9200 13500
+Wire Wire Line
+	9200 13500 8950 13500
+Wire Wire Line
+	7450 13900 7650 13900
+Wire Wire Line
+	7450 13650 7450 13900
+Wire Wire Line
+	9200 13650 8450 13650
+Wire Wire Line
+	8050 13800 8250 13800
+Wire Wire Line
+	8250 13800 8250 14200
+Wire Wire Line
+	8250 14200 4950 14200
+Wire Wire Line
+	4950 14200 4950 15100
+Wire Wire Line
+	4950 15100 5150 15100
+Wire Wire Line
+	8550 13900 8450 13900
+Wire Wire Line
+	8450 13900 8450 13650
+Connection ~ 8450 13650
+Wire Wire Line
+	8450 13650 7450 13650
+Wire Wire Line
+	8050 14000 8150 14000
+Wire Wire Line
+	8150 14000 8150 14400
+Wire Wire Line
+	8150 14400 6550 14400
+Wire Wire Line
+	6550 14400 6550 15100
+Wire Wire Line
+	6550 15100 6750 15100
+Wire Wire Line
+	8950 14000 10150 14000
+Wire Wire Line
+	10150 14000 10150 15100
+Wire Wire Line
+	10150 15100 9950 15100
+Wire Wire Line
+	8950 13800 11750 13800
+Wire Wire Line
+	11750 13800 11750 15100
+Wire Wire Line
+	11750 15100 11550 15100
+Wire Notes Line width 10
+	9650 15250 9650 17450
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5AFA6C83
+P 9650 15100
+F 0 "U?" H 9650 15300 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 14900 50  0001 C CNN
+F 2 "" H 10300 15100 50  0001 C CNN
+F 3 "" H 10300 15100 50  0001 C CNN
+	1    9650 15100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 17000 10150 17000
+Wire Wire Line
+	7350 16000 10350 16000
+Wire Wire Line
+	9150 16700 10150 16700
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 8 1 5AFA6C4C
+P 9650 16600
+F 0 "U?" H 9650 16687 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 16400 50  0001 C CNN
+F 2 "" H 10300 16600 50  0001 C CNN
+F 3 "" H 10300 16600 50  0001 C CNN
+	8    9650 16600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5AFA6C3D
+P 9650 16400
+F 0 "U?" H 9650 16487 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 16200 50  0001 C CNN
+F 2 "" H 10300 16400 50  0001 C CNN
+F 3 "" H 10300 16400 50  0001 C CNN
+	5    9650 16400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 6 1 5AFA6C37
+P 9650 16200
+F 0 "U?" H 9650 16287 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 16000 50  0001 C CNN
+F 2 "" H 10300 16200 50  0001 C CNN
+F 3 "" H 10300 16200 50  0001 C CNN
+	6    9650 16200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 7 1 5AFA6C2E
+P 9650 16800
+F 0 "U?" H 9650 16887 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 16600 50  0001 C CNN
+F 2 "" H 10300 16800 50  0001 C CNN
+F 3 "" H 10300 16800 50  0001 C CNN
+	7    9650 16800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5AFA6C28
+P 9650 17500
+F 0 "U?" H 9650 17655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 17300 50  0001 C CNN
+F 2 "" H 10300 17500 50  0001 C CNN
+F 3 "" H 10300 17500 50  0001 C CNN
+	4    9650 17500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5AFA6C22
+P 9650 15500
+F 0 "U?" H 9650 15655 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 9650 15300 50  0001 C CNN
+F 2 "" H 10300 15500 50  0001 C CNN
+F 3 "" H 10300 15500 50  0001 C CNN
+	2    9650 15500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11550 16800 13650 16800
+Wire Wire Line
+	10150 16200 10950 16200
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B1F495A
+P 3700 7350
+F 0 "U?" H 3700 7505 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 3700 7150 50  0001 C CNN
+F 2 "" H 4350 7350 50  0001 C CNN
+F 3 "" H 4350 7350 50  0001 C CNN
+	4    3700 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 4 1 5B1F4A2D
+P 4500 7650
+F 0 "U?" H 4500 7805 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 4500 7450 50  0001 C CNN
+F 2 "" H 5150 7650 50  0001 C CNN
+F 3 "" H 5150 7650 50  0001 C CNN
+	4    4500 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Lamp LA?
+U 1 1 5B24EA4F
+P 6350 7350
+F 0 "LA?" V 6085 7350 50  0000 C CNN
+F 1 "A-end TLC" V 6176 7350 50  0000 C CNN
+F 2 "" V 6350 7450 50  0001 C CNN
+F 3 "" V 6350 7450 50  0001 C CNN
+	1    6350 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L device:Lamp LA?
+U 1 1 5B24EC3A
+P 10500 7650
+F 0 "LA?" V 10235 7650 50  0000 C CNN
+F 1 "B-end TLC" V 10326 7650 50  0000 C CNN
+F 2 "" V 10500 7750 50  0001 C CNN
+F 3 "" V 10500 7750 50  0001 C CNN
+	1    10500 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 7350 6150 7350
+Wire Wire Line
+	3400 7350 3200 7350
+Wire Wire Line
+	4200 7650 3200 7650
+Wire Wire Line
+	4800 7650 10300 7650
+Wire Wire Line
+	6550 7350 6750 7350
+Text GLabel 6750 7350 2    50   Input ~ 0
++24V
+Wire Wire Line
+	10700 7650 10900 7650
+Text GLabel 10900 7650 2    50   Input ~ 0
++24V
+Text GLabel 3200 7350 0    50   Input ~ 0
+-24V
+Text GLabel 3200 7650 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B4D0314
+P 3700 7950
+F 0 "U?" H 3700 8105 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 3700 7750 50  0001 C CNN
+F 2 "" H 4350 7950 50  0001 C CNN
+F 3 "" H 4350 7950 50  0001 C CNN
+	2    3700 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7950 3200 7950
+Text GLabel 3200 7950 0    50   Input ~ 0
+Local_L1
+Wire Wire Line
+	4000 7950 4200 7950
+Wire Notes Line width 10
+	3700 6700 3700 8200
+Wire Notes Line width 10
+	4500 7100 4500 8200
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 3 1 5B702C38
+P 4500 8250
+F 0 "U?" H 4500 8405 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 4500 8050 50  0001 C CNN
+F 2 "" H 5150 8250 50  0001 C CNN
+F 3 "" H 5150 8250 50  0001 C CNN
+	3    4500 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 3 1 5B702C97
+P 3700 8250
+F 0 "U?" H 3700 8405 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 3700 8050 50  0001 C CNN
+F 2 "" H 4350 8250 50  0001 C CNN
+F 3 "" H 4350 8250 50  0001 C CNN
+	3    3700 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 2 1 5B702D21
+P 4500 7950
+F 0 "U?" H 4500 8105 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 4500 7750 50  0001 C CNN
+F 2 "" H 5150 7950 50  0001 C CNN
+F 3 "" H 5150 7950 50  0001 C CNN
+	2    4500 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 8250 3200 8250
+Text GLabel 3200 8250 0    50   Input ~ 0
+Local_L2
+Wire Wire Line
+	4000 8250 4200 8250
+$Comp
+L mrm:Contactor_3phase_2NC_2NO_Eaton_ECoil K?
+U 1 1 5B87CD2E
+P 5300 8800
+F 0 "K?" H 5300 9223 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO_Eaton_ECoil" H 5300 8550 50  0001 C CNN
+F 2 "" H 5950 8800 50  0001 C CNN
+F 3 "" H 5950 8800 50  0001 C CNN
+	1    5300 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7950 5800 8650
+Wire Wire Line
+	5800 8650 5600 8650
+Wire Wire Line
+	5600 8550 5700 8550
+Wire Wire Line
+	5700 8550 5700 8250
+Wire Wire Line
+	5700 8250 4800 8250
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5BA0BD1D
+P 3700 8850
+F 0 "SW?" H 3700 9000 50  0000 C CNN
+F 1 "HEP Pickup" H 3700 8750 50  0000 C CNN
+F 2 "" H 3700 9050 50  0001 C CNN
+F 3 "" H 3700 9050 50  0001 C CNN
+	1    3700 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?HEP_POWERED?
+U 6 1 5BA0BD24
+P 4350 8850
+AR Path="/5AF69061/5BA0BD24" Ref="K?HEP_POWERED?"  Part="6" 
+AR Path="/5AE8F11D/5BA0BD24" Ref="K?"  Part="6" 
+F 0 "K?" H 4350 8950 50  0000 C CNN
+F 1 "HEP Voltage Detect" H 4350 8750 50  0000 C CNN
+F 2 "" H 5000 8850 50  0001 C CNN
+F 3 "" H 5000 8850 50  0001 C CNN
+	6    4350 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 8550 5000 8550
+Wire Wire Line
+	3300 8550 3300 8850
+Wire Wire Line
+	3300 8850 3500 8850
+Wire Wire Line
+	3900 8850 4050 8850
+Wire Wire Line
+	4800 8850 4800 8650
+Wire Wire Line
+	4800 8650 5000 8650
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 5 1 5BF73A8A
+P 5300 9300
+F 0 "U?" H 5300 9455 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5300 9100 50  0001 C CNN
+F 2 "" H 5950 9300 50  0001 C CNN
+F 3 "" H 5950 9300 50  0001 C CNN
+	5    5300 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 9300 5800 9300
+Wire Wire Line
+	5800 9300 5800 9100
+Wire Wire Line
+	5800 9100 4800 9100
+Wire Wire Line
+	4800 9100 4800 8850
+Connection ~ 4800 8850
+Wire Wire Line
+	3300 8850 3300 9300
+Wire Wire Line
+	3300 9300 3500 9300
+Connection ~ 3300 8850
+Text GLabel 2300 2050 0    50   Input ~ 0
+-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 5 1 5C040660
+P 3200 2050
+F 0 "K?" H 3200 2300 50  0000 C CNN
+F 1 "Standby Power Selected" H 3200 2200 50  0000 C CNN
+F 2 "" H 3850 2050 50  0001 C CNN
+F 3 "" H 3850 2050 50  0001 C CNN
+	5    3200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Contactor_3phase_2NC_2NO K?
+U 5 1 5C04066B
+P 3200 2500
+AR Path="/5AF69061/5C04066B" Ref="K?"  Part="5" 
+AR Path="/5AE8F11D/5C04066B" Ref="K?"  Part="5" 
+F 0 "K?" H 3200 2750 50  0000 C CNN
+F 1 "Genset Power Selected" H 3200 2650 50  0000 C CNN
+F 2 "" H 3850 2500 50  0001 C CNN
+F 3 "" H 3850 2500 50  0001 C CNN
+	5    3200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5C040673
+P 5000 2050
+F 0 "SW?" H 5000 2200 50  0000 C CNN
+F 1 "HEP Safety Keyswitch" H 5000 1950 50  0000 C CNN
+F 2 "" H 5000 2050 50  0001 C CNN
+F 3 "" H 5000 2050 50  0001 C CNN
+	1    5000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mrm:Relay_Octal_11pin_separate K?
+U 3 1 5C04068D
+P 4100 2500
+AR Path="/5AF69061/5C04068D" Ref="K?"  Part="2" 
+AR Path="/5AE8F11D/5C04068D" Ref="K?"  Part="3" 
+F 0 "K?" H 4100 2200 50  0000 C CNN
+F 1 "Idle Relay" H 4100 2300 50  0000 C CNN
+F 2 "" H 4500 2550 50  0001 C CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 4950 2650 50  0001 C CNN
+	3    4100 2500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2500 2900 2500
+Wire Wire Line
+	2300 2050 2700 2050
+Wire Wire Line
+	2700 2050 2700 2500
+Connection ~ 2700 2050
+Wire Wire Line
+	2700 2050 2900 2050
+Text GLabel 5900 3750 2    50   Input ~ 0
++24V
+Text GLabel 5900 4150 2    50   Input ~ 0
++24V
+Text GLabel 7500 3750 2    50   Input ~ 0
++24V
+Text GLabel 7500 4150 2    50   Input ~ 0
++24V
+Text GLabel 9100 3750 0    50   Input ~ 0
++24V
+Text GLabel 9100 4150 0    50   Input ~ 0
++24V
+Text GLabel 10700 4150 0    50   Input ~ 0
++24V
+Text GLabel 10700 3750 0    50   Input ~ 0
++24V
+Text GLabel 300  -8400 0    50   Input ~ 0
+A+24V
+Text GLabel 300  -8000 0    50   Input ~ 0
+A-24V
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 1 1 5D52DF8B
+P 700 -8000
+F 0 "U?" H 700 -7800 50  0000 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 700 -8200 50  0001 C CNN
+F 2 "" H 1350 -8000 50  0001 C CNN
+F 3 "" H 1350 -8000 50  0001 C CNN
+	1    700  -8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	300  -8000 400  -8000
+Wire Wire Line
+	300  -8400 5950 -8400
+Wire Wire Line
+	5950 -8400 5950 -8000
+Wire Wire Line
+	5950 -8000 1000 -8000
+Wire Wire Line
+	3500 2500 3800 2500
+Wire Wire Line
+	3500 2050 4500 2050
+Connection ~ 4500 2050
+Wire Wire Line
+	4500 2050 4800 2050
+Wire Wire Line
+	4500 2050 4500 2400
+$Comp
+L mrm:Contactor_3phase_2NC_2NO U?
+U 8 1 5B65C321
+P 5300 9600
+F 0 "U?" H 5300 9755 50  0001 C CNN
+F 1 "Contactor_3phase_2NC_2NO" H 5300 9400 50  0001 C CNN
+F 2 "" H 5950 9600 50  0001 C CNN
+F 3 "" H 5950 9600 50  0001 C CNN
+	8    5300 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Lamp LA?
+U 1 1 5B65C6AB
+P 6200 9600
+F 0 "LA?" V 5935 9600 50  0000 C CNN
+F 1 "HEP On" V 6026 9600 50  0000 C CNN
+F 2 "" V 6200 9700 50  0001 C CNN
+F 3 "" V 6200 9700 50  0001 C CNN
+	1    6200 9600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 9600 6000 9600
+Wire Wire Line
+	6400 9600 6600 9600
+Text GLabel 6600 9600 2    50   Input ~ 0
++24V
+Text GLabel 3200 9600 0    50   Input ~ 0
+-24V
+Wire Wire Line
+	3200 9600 5000 9600
+Wire Notes Line width 10
+	5300 9000 5300 9550
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5B9CCC82
+P 3700 9300
+F 0 "SW?" H 3700 9450 50  0000 C CNN
+F 1 "HEP Dropout" H 3700 9200 50  0000 C CNN
+F 2 "" H 3700 9500 50  0001 C CNN
+F 3 "" H 3700 9500 50  0001 C CNN
+	1    3700 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2050 7600 2050
+Wire Wire Line
+	3900 9300 5000 9300
+Wire Wire Line
+	4800 7950 5800 7950
+Wire Wire Line
+	10700 5150 10700 5000
+Wire Wire Line
+	9200 5300 10300 5300
+Wire Wire Line
+	10300 5300 10300 5450
+Connection ~ 10300 5450
+Wire Wire Line
+	10300 5450 10900 5450
+Wire Wire Line
+	10700 5000 11700 5000
+Wire Wire Line
+	11700 5000 11700 4850
+Connection ~ 11700 4850
+Wire Wire Line
+	11700 4850 13600 4850
+Wire Wire Line
+	10100 4850 10900 4850
+Wire Wire Line
+	3200 5450 4900 5450
+Wire Wire Line
+	4900 5300 5900 5300
+Wire Wire Line
+	4900 5300 4900 5450
+Connection ~ 4900 5450
+Wire Wire Line
+	4900 5450 6300 5450
+Wire Wire Line
+	7400 5250 7400 5300
+Wire Wire Line
+	7400 5300 6300 5300
+Wire Wire Line
+	6300 5300 6300 5450
+Connection ~ 6300 5450
+Wire Wire Line
+	6300 5450 9300 5450
+Wire Wire Line
+	4400 2400 4500 2400
+Wire Wire Line
+	4650 8850 4800 8850
+Text Notes 12750 2200 0    50   ~ 0
+Battery box to car signals:\n6x current transformers\n8x relay selection / interlock\n3x HEP pickup/drop\n2x 24V power\n4x (2x 1/2 car) TL configuration relays\n3x (2x 1/2 car) Indicator lights\n----------------------------\n26x total\n23x 1/2 car
+Wire Notes Line
+	4450 3300 12150 3300
+Wire Notes Line
+	3950 8400 3950 9750
+Wire Notes Line
+	5950 7100 5950 9900
+$EndSCHEMATC
