@@ -707,6 +707,23 @@ X 44 44 300 0 100 L 50 50 8 1 P
 ENDDRAW
 ENDDEF
 #
+# mrm:Current_Transformer
+#
+DEF mrm:Current_Transformer T 0 40 N N 1 F N
+F0 "T" -100 50 50 H V R CNN
+F1 "mrm:Current_Transformer" -100 -50 50 H V R CNN
+F2 "" 0 -100 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+DRAW
+A 0 -50 50 1799 901 0 1 0 N -50 -50 0 0
+A 0 -50 50 -901 -1799 0 1 0 N 0 -99 -50 -50
+A 0 50 50 1799 901 0 1 0 N -50 50 0 100
+A 0 50 50 -901 -1799 0 1 0 N 0 1 -50 50
+X AA 1 300 100 300 L 50 50 1 1 P
+X AB 2 300 -100 300 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # mrm:Relay_Octal_11pin
 #
 DEF mrm:Relay_Octal_11pin K 0 40 Y Y 1 F N
