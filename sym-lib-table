@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name mrm)(type Legacy)(uri ${KIPRJMOD}/mrm.lib)(options "")(descr ""))
+  (lib (name power-car-rescue)(type Legacy)(uri ${KIPRJMOD}/power-car-rescue.lib)(options "")(descr ""))
 )

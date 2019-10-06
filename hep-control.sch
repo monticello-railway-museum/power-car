@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:power-car-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 4 5
 Title ""
-Date "2018-08-05"
-Rev "1.4"
+Date "2019-10-06"
+Rev "1.5"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L device:Transformer_1P_1S T?
+L power-car-rescue:Transformer_1P_1S-device T?
 U 1 1 5AE7DC6B
 P -7150 6400
 F 0 "T?" H -7150 6778 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H -7150 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:D_Bridge_+-AA D?
+L power-car-rescue:D_Bridge_+-AA-device D?
 U 1 1 5AE7DE11
 P -6250 6400
 F 0 "D?" H -6250 6800 50  0000 C CNN
@@ -756,7 +756,7 @@ F 3 "" H -6250 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Lamp LA?
+L power-car-rescue:Lamp-device LA?
 U 1 1 5AF934D7
 P -6550 3300
 F 0 "LA?" V -6700 3300 50  0000 C CNN
@@ -2908,7 +2908,7 @@ F 3 "" H 5150 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Lamp LA?
+L power-car-rescue:Lamp-device LA?
 U 1 1 5B24EA4F
 P 6350 7350
 F 0 "LA?" V 6085 7350 50  0000 C CNN
@@ -2919,7 +2919,7 @@ F 3 "" V 6350 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:Lamp LA?
+L power-car-rescue:Lamp-device LA?
 U 1 1 5B24EC3A
 P 10500 7650
 F 0 "LA?" V 10235 7650 50  0000 C CNN
@@ -3210,7 +3210,7 @@ F 3 "" H 5950 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Lamp LA?
+L power-car-rescue:Lamp-device LA?
 U 1 1 5B65C6AB
 P 6200 9600
 F 0 "LA?" V 5935 9600 50  0000 C CNN

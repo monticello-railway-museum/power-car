@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:power-car-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 3 5
 Title "Power Car"
-Date "2018-08-05"
-Rev "1.4"
+Date "2019-10-06"
+Rev "1.5"
 Comp "Monticello Railway Museum"
 Comment1 ""
 Comment2 ""
@@ -467,12 +467,12 @@ Wire Wire Line
 Text GLabel 3600 5100 0    50   Input ~ 0
 Genset_Ctrl_+24V
 $Comp
-L mrm:Relay_Octal_11pin_separate K?
+L mrm:Relay_Octal_11pin_separate K5
 U 1 1 5AFE65B3
 P 4100 5100
-AR Path="/5B1A0A6E/5AFE65B3" Ref="K?"  Part="1" 
+AR Path="/5B1A0A6E/5AFE65B3" Ref="K5"  Part="1" 
 AR Path="/5AE8F0EF/5AFE65B3" Ref="K?"  Part="1" 
-F 0 "K?" H 4100 5400 50  0000 C CNN
+F 0 "K5" H 4100 5400 50  0000 C CNN
 F 1 "Low Engine Temp" H 4100 5300 50  0000 C CNN
 F 2 "" H 4500 5150 50  0001 C CNN
 F 3 "" H 4950 5250 50  0001 C CNN
@@ -508,12 +508,12 @@ Wire Wire Line
 	12950 16400 12950 17700
 Connection ~ 12950 17700
 $Comp
-L Switch:SW_Push_Dual SW?
+L Switch:SW_Push_Dual SW1
 U 1 1 5B396029
 P 10100 3900
-AR Path="/5B1A0A6E/5B396029" Ref="SW?"  Part="1" 
+AR Path="/5B1A0A6E/5B396029" Ref="SW1"  Part="1" 
 AR Path="/5AE8F0EF/5B396029" Ref="SW?"  Part="1" 
-F 0 "SW?" H 10100 4185 50  0000 C CNN
+F 0 "SW1" H 10100 4185 50  0000 C CNN
 F 1 "Genset Start" H 10100 4094 50  0000 C CNN
 F 2 "" H 10100 4100 50  0001 C CNN
 F 3 "" H 10100 4100 50  0001 C CNN
@@ -521,12 +521,12 @@ F 3 "" H 10100 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mrm:Relay_Timer K?
+L mrm:Relay_Timer K2
 U 1 1 5B396030
 P 12100 4350
-AR Path="/5B1A0A6E/5B396030" Ref="K?"  Part="1" 
+AR Path="/5B1A0A6E/5B396030" Ref="K2"  Part="1" 
 AR Path="/5AE8F0EF/5B396030" Ref="K?"  Part="1" 
-F 0 "K?" V 11183 4350 50  0000 C CNN
+F 0 "K2" V 11183 4350 50  0000 C CNN
 F 1 "Control Power Timer Relay" V 11274 4350 50  0000 C CNN
 F 2 "" H 12550 4400 50  0001 C CNN
 F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 12950 4500 50  0001 C CNN
@@ -579,12 +579,12 @@ F 3 "" H 11450 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW2
 U 1 1 5B39604F
 P 10100 5350
-AR Path="/5B1A0A6E/5B39604F" Ref="SW?"  Part="1" 
+AR Path="/5B1A0A6E/5B39604F" Ref="SW2"  Part="1" 
 AR Path="/5AE8F0EF/5B39604F" Ref="SW?"  Part="1" 
-F 0 "SW?" H 10100 5650 50  0000 C CNN
+F 0 "SW2" H 10100 5650 50  0000 C CNN
 F 1 "Genset Stop" H 10100 5550 50  0000 C CNN
 F 2 "" H 10100 5550 50  0001 C CNN
 F 3 "" H 10100 5550 50  0001 C CNN
@@ -641,12 +641,12 @@ Connection ~ 11450 4450
 Wire Wire Line
 	11450 4450 11450 4550
 $Comp
-L mrm:Relay_Octal_11pin K?
+L mrm:Relay_Octal_11pin K3
 U 1 1 5B39607D
 P 12100 6900
-AR Path="/5B1A0A6E/5B39607D" Ref="K?"  Part="1" 
+AR Path="/5B1A0A6E/5B39607D" Ref="K3"  Part="1" 
 AR Path="/5AE8F0EF/5B39607D" Ref="K?"  Part="1" 
-F 0 "K?" V 11133 6900 50  0000 C CNN
+F 0 "K3" V 11133 6900 50  0000 C CNN
 F 1 "Genset Remote Run Relay" V 11224 6900 50  0000 C CNN
 F 2 "" H 12450 6950 50  0001 C CNN
 F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 12950 7050 50  0001 C CNN
@@ -656,12 +656,12 @@ $EndComp
 Wire Wire Line
 	11200 6500 12500 6500
 $Comp
-L mrm:Contactor_3phase_2NC_2NO K?
+L mrm:Contactor_3phase_2NC_2NO K1
 U 1 1 5B396085
 P 14200 3850
-AR Path="/5B1A0A6E/5B396085" Ref="K?"  Part="1" 
+AR Path="/5B1A0A6E/5B396085" Ref="K1"  Part="1" 
 AR Path="/5AE8F0EF/5B396085" Ref="K?"  Part="1" 
-F 0 "K?" H 14200 4250 50  0000 C CNN
+F 0 "K1" H 14200 4250 50  0000 C CNN
 F 1 "Control Power Contactor" H 14200 4150 50  0000 C CNN
 F 2 "" H 14850 3850 50  0001 C CNN
 F 3 "" H 14850 3850 50  0001 C CNN
@@ -669,17 +669,17 @@ F 3 "" H 14850 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mrm:Contactor_3phase_2NC_2NO K?
+L mrm:Contactor_3phase_2NC_2NO K1
 U 2 1 5B39608C
 P 14200 4350
-AR Path="/5B1A0A6E/5B39608C" Ref="K?"  Part="2" 
+AR Path="/5B1A0A6E/5B39608C" Ref="K1"  Part="2" 
 AR Path="/5AE8F0EF/5B39608C" Ref="K?"  Part="2" 
-F 0 "K?" H 14200 4505 50  0001 C CNN
+F 0 "K1" H 14200 4505 50  0001 C CNN
 F 1 "Contactor_3phase_2NC_2NO" H 14200 4150 50  0001 C CNN
 F 2 "" H 14850 4350 50  0001 C CNN
 F 3 "" H 14850 4350 50  0001 C CNN
 	2    14200 4350
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Notes Line width 10
 	14200 4000 14200 4300
@@ -690,12 +690,12 @@ Genset Control Power
 Wire Wire Line
 	10300 4100 11200 4100
 $Comp
-L mrm:Relay_Timer K?
+L mrm:Relay_Timer K4
 U 1 1 5B3ADBF7
 P 14050 6000
-AR Path="/5B1A0A6E/5B3ADBF7" Ref="K?"  Part="1" 
+AR Path="/5B1A0A6E/5B3ADBF7" Ref="K4"  Part="1" 
 AR Path="/5AE8F0EF/5B3ADBF7" Ref="K?"  Part="1" 
-F 0 "K?" V 13133 6000 50  0000 C CNN
+F 0 "K4" V 13133 6000 50  0000 C CNN
 F 1 "Cool-down Timer Relay" V 13224 6000 50  0000 C CNN
 F 2 "" H 14500 6050 50  0001 C CNN
 F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 14900 6150 50  0001 C CNN
@@ -760,10 +760,10 @@ Wire Wire Line
 Wire Wire Line
 	12500 5350 10300 5350
 $Comp
-L mrm:Relay_Octal_11pin_separate K?
+L mrm:Relay_Octal_11pin_separate K5
 U 2 1 5B430CFF
 P 12100 8150
-F 0 "K?" H 12100 7850 50  0000 C CNN
+F 0 "K5" H 12100 7850 50  0000 C CNN
 F 1 "Low Engine Temp" H 12100 7950 50  0000 C CNN
 F 2 "" H 12750 8150 50  0001 C CNN
 F 3 "" H 12750 8150 50  0001 C CNN
@@ -903,10 +903,10 @@ Connection ~ 14650 7200
 Wire Wire Line
 	12400 8250 14650 8250
 $Comp
-L mrm:Relay_Octal_11pin_separate K?
+L mrm:Relay_Octal_11pin_separate K6
 U 1 1 5BB5E4CD
 P 10300 7900
-F 0 "K?" H 10300 8192 50  0000 C CNN
+F 0 "K6" H 10300 8192 50  0000 C CNN
 F 1 "Idle Relay" H 10300 8101 50  0000 C CNN
 F 2 "" H 10700 7950 50  0001 C CNN
 F 3 "" H 11150 8050 50  0001 C CNN
@@ -914,10 +914,10 @@ F 3 "" H 11150 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mrm:Relay_Octal_11pin_separate K?
+L mrm:Relay_Octal_11pin_separate K6
 U 2 1 5BB5E557
 P 10300 8300
-F 0 "K?" H 10300 8625 50  0001 C CNN
+F 0 "K6" H 10300 8625 50  0001 C CNN
 F 1 "Relay_Octal_11pin_separate" H 10300 8534 50  0001 C CNN
 F 2 "" H 10700 8350 50  0001 C CNN
 F 3 "" H 11150 8450 50  0001 C CNN
@@ -934,4 +934,6 @@ Wire Wire Line
 Wire Wire Line
 	14650 7400 14650 8250
 Connection ~ 14650 7400
+Text Notes 10300 6950 0    50   ~ 0
+KA-4474-1\n109P198\n24V DC 3CO
 $EndSCHEMATC

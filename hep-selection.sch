@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:power-car-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 2 5
 Title "Power Car"
-Date "2018-08-05"
-Rev "1.4"
+Date "2019-10-06"
+Rev "1.5"
 Comp "Monticello Railway Museum"
 Comment1 ""
 Comment2 ""
@@ -411,7 +411,7 @@ Wire Wire Line
 Wire Wire Line
 	11800 3100 11700 3100
 $Comp
-L device:Transformer_1P_1S T?
+L power-car-rescue:Transformer_1P_1S-device T?
 U 1 1 5AD7B1F0
 P 12200 3300
 F 0 "T?" H 12200 3678 50  0000 C CNN
@@ -442,7 +442,7 @@ Connection ~ 9800 1700
 Wire Wire Line
 	10600 2400 10400 2400
 $Comp
-L device:Transformer_1P_1S T?
+L power-car-rescue:Transformer_1P_1S-device T?
 U 1 1 5AD714B0
 P 11000 2600
 F 0 "T?" H 11000 2978 50  0000 C CNN
@@ -507,7 +507,7 @@ Wire Notes Line
 Text Notes 10600 5950 0    50   ~ 0
 Trainline Safety Loop
 $Comp
-L device:R R1
+L power-car-rescue:R-device R1
 U 1 1 5ADE2274
 P 8850 6100
 F 0 "R1" V 8750 6100 50  0000 C CNN
@@ -518,7 +518,7 @@ F 3 "" H 8850 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:LED D1
+L power-car-rescue:LED-device D1
 U 1 1 5ADE24E4
 P 8350 6100
 F 0 "D1" H 8350 6200 50  0000 C CNN
@@ -542,7 +542,7 @@ F 3 "http://www.azettler.com/pdfs/az850.pdf" H 10200 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R4
+L power-car-rescue:R-device R4
 U 1 1 5AE78376
 P 12150 8400
 F 0 "R4" V 12250 8400 50  0000 C CNN
@@ -553,7 +553,7 @@ F 3 "" H 12150 8400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:LED D4
+L power-car-rescue:LED-device D4
 U 1 1 5AE7837D
 P 12650 8400
 F 0 "D4" H 12650 8300 50  0000 C CNN
@@ -673,7 +673,7 @@ Local_110V_L1
 Text GLabel 15750 2700 2    50   Input ~ 0
 Local_110V_L2
 $Comp
-L device:D_Bridge_+-AA D?
+L power-car-rescue:D_Bridge_+-AA-device D?
 U 1 1 5B1FDD26
 P 13650 3300
 F 0 "D?" H 13850 3600 50  0000 L CNN
@@ -692,7 +692,7 @@ Wire Wire Line
 Wire Wire Line
 	12900 3600 13650 3600
 $Comp
-L device:R R3
+L power-car-rescue:R-device R3
 U 1 1 5B244082
 P 13900 4300
 F 0 "R3" V 14000 4300 50  0000 C CNN
@@ -703,7 +703,7 @@ F 3 "" H 13900 4300 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L device:LED D3
+L power-car-rescue:LED-device D3
 U 1 1 5B244088
 P 13400 4300
 F 0 "D3" H 13400 4200 50  0000 C CNN
@@ -732,7 +732,7 @@ Wire Wire Line
 Wire Wire Line
 	14150 3300 14150 3900
 $Comp
-L device:CP1 C1
+L power-car-rescue:CP1-device C1
 U 1 1 5B3013F7
 P 13600 3900
 F 0 "C1" V 13450 3900 50  0000 C CNN

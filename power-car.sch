@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:power-car-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 5
 Title "Power Car"
-Date "2018-08-05"
-Rev "1.4"
+Date "2019-10-06"
+Rev "1.5"
 Comp "Monticello Railway Museum"
 Comment1 ""
 Comment2 ""

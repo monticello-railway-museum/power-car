@@ -1,4 +1,5 @@
 *.pdf
 *.bak
+*.*-bak
 *.bck
 _saved*.sch
