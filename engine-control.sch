@@ -132,101 +132,101 @@ Genset Control Board
 $Comp
 L Connector:Screw_Terminal_01x12 J?
 U 1 1 5AD4D4C7
-P 7500 3200
+P 4000 9150
 AR Path="/5B1A0A6E/5AD4D4C7" Ref="J?"  Part="1" 
 AR Path="/5AE8F0EF/5AD4D4C7" Ref="J?"  Part="1" 
-F 0 "J?" V 7624 3146 50  0001 C CNN
-F 1 "Generator Taps" V 7650 3150 50  0000 C CNN
-F 2 "" H 7500 3200 50  0001 C CNN
-F 3 "~" H 7500 3200 50  0001 C CNN
-	1    7500 3200
+F 0 "J?" V 4124 9096 50  0001 C CNN
+F 1 "Generator Taps" V 4150 9100 50  0000 C CNN
+F 2 "" H 4000 9150 50  0001 C CNN
+F 3 "~" H 4000 9150 50  0001 C CNN
+	1    4000 9150
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	7000 3000 7000 2000
+	3500 8950 3500 7950
 Wire Wire Line
-	7000 2000 7600 2000
+	3500 7950 4100 7950
 Wire Wire Line
-	7600 2000 7600 3000
+	4100 7950 4100 8950
 Wire Wire Line
-	7100 3000 7100 1800
+	3600 8950 3600 7750
 Wire Wire Line
-	7100 1800 7700 1800
+	3600 7750 4200 7750
 Wire Wire Line
-	7700 1800 7700 3000
+	4200 7750 4200 8950
 Wire Wire Line
-	7200 3000 7200 1600
+	3700 8950 3700 7550
 Wire Wire Line
-	7200 1600 7800 1600
+	3700 7550 4300 7550
 Wire Wire Line
-	7800 1600 7800 3000
+	4300 7550 4300 8950
 Wire Wire Line
-	7300 3000 7300 2200
+	3800 8950 3800 8150
 Wire Wire Line
-	7300 2200 7400 2200
+	3800 8150 3900 8150
 Wire Wire Line
-	8100 2200 8100 3000
+	4600 8150 4600 8950
 Wire Wire Line
-	8000 3000 8000 2200
-Connection ~ 8000 2200
+	4500 8950 4500 8150
+Connection ~ 4500 8150
 Wire Wire Line
-	8000 2200 8100 2200
+	4500 8150 4600 8150
 Wire Wire Line
-	7900 3000 7900 2200
-Connection ~ 7900 2200
+	4400 8950 4400 8150
+Connection ~ 4400 8150
 Wire Wire Line
-	7900 2200 8000 2200
+	4400 8150 4500 8150
 Wire Wire Line
-	7400 3000 7400 2200
-Connection ~ 7400 2200
+	3900 8950 3900 8150
+Connection ~ 3900 8150
 Wire Wire Line
-	7400 2200 7500 2200
+	3900 8150 4000 8150
 Wire Wire Line
-	7500 3000 7500 2200
-Connection ~ 7500 2200
+	4000 8950 4000 8150
+Connection ~ 4000 8150
 Wire Wire Line
-	7500 2200 7900 2200
-Text GLabel 9300 2200 2    50   Input ~ 0
+	4000 8150 4400 8150
+Text GLabel 5800 8150 2    50   Input ~ 0
 Genset_L0
-Text GLabel 9300 2000 2    50   Input ~ 0
+Text GLabel 5800 7950 2    50   Input ~ 0
 Genset_L1
-Text GLabel 9300 1800 2    50   Input ~ 0
+Text GLabel 5800 7750 2    50   Input ~ 0
 Genset_L2
 Wire Wire Line
-	8100 2200 9300 2200
-Connection ~ 8100 2200
+	4600 8150 5800 8150
+Connection ~ 4600 8150
 Wire Wire Line
-	7600 2000 8500 2000
-Connection ~ 7600 2000
-Text GLabel 9300 1600 2    50   Input ~ 0
+	4100 7950 5000 7950
+Connection ~ 4100 7950
+Text GLabel 5800 7550 2    50   Input ~ 0
 Genset_L3
 Wire Wire Line
-	7700 1800 8500 1800
-Connection ~ 7700 1800
+	4200 7750 5000 7750
+Connection ~ 4200 7750
 Wire Wire Line
-	7800 1600 8500 1600
-Connection ~ 7800 1600
-Text Notes 7150 1350 0    50   ~ 0
+	4300 7550 5000 7550
+Connection ~ 4300 7550
+Text Notes 3650 7300 0    50   ~ 0
 Generator taps - 139/240V\nParallel wye topology
 $Comp
 L mrm:Breaker_3P CB?
 U 1 1 5AD5381A
-P 8700 1800
+P 5200 7750
 AR Path="/5B1A0A6E/5AD5381A" Ref="CB?"  Part="1" 
 AR Path="/5AE8F0EF/5AD5381A" Ref="CB?"  Part="1" 
-F 0 "CB?" H 8700 2235 50  0000 C CNN
-F 1 "500A" H 8700 2144 50  0000 C CNN
-F 2 "" H 8700 2000 50  0001 C CNN
-F 3 "" H 8700 2000 50  0001 C CNN
-	1    8700 1800
+F 0 "CB?" H 5200 8185 50  0000 C CNN
+F 1 "500A" H 5200 8094 50  0000 C CNN
+F 2 "" H 5200 7950 50  0001 C CNN
+F 3 "" H 5200 7950 50  0001 C CNN
+	1    5200 7750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 1600 9300 1600
+	5400 7550 5800 7550
 Wire Wire Line
-	8900 1800 9300 1800
+	5400 7750 5800 7750
 Wire Wire Line
-	8900 2000 9300 2000
+	5400 7950 5800 7950
 $Comp
 L Switch:SW_Push_Dual SW?
 U 1 1 5AF06F56
@@ -322,10 +322,10 @@ Text GLabel 10850 18500 0    50   Input ~ 0
 Genset_Remote_Run
 Wire Wire Line
 	10850 18500 10950 18500
-Text GLabel 2350 2200 0    50   Input ~ 0
+Text GLabel 2100 2200 0    50   Input ~ 0
 Genset_Remote_Run
 Wire Wire Line
-	2350 2200 2600 2200
+	2100 2200 2600 2200
 Wire Wire Line
 	10350 17700 10350 16150
 Connection ~ 10350 17700
@@ -462,41 +462,37 @@ F 3 "" H 6700 4900 50  0001 C CNN
 	1    6700 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 5100 3600 5100
 Text GLabel 3600 5100 0    50   Input ~ 0
 Genset_Ctrl_+24V
 $Comp
 L mrm:Relay_Octal_11pin_separate K5
 U 1 1 5AFE65B3
-P 4100 5100
+P 5000 5100
 AR Path="/5B1A0A6E/5AFE65B3" Ref="K5"  Part="1" 
 AR Path="/5AE8F0EF/5AFE65B3" Ref="K?"  Part="1" 
-F 0 "K5" H 4100 5400 50  0000 C CNN
-F 1 "Low Engine Temp" H 4100 5300 50  0000 C CNN
-F 2 "" H 4500 5150 50  0001 C CNN
-F 3 "" H 4950 5250 50  0001 C CNN
-	1    4100 5100
-	1    0    0    -1  
+F 0 "K5" H 5000 5400 50  0000 C CNN
+F 1 "Low Engine Temp" H 5000 5300 50  0000 C CNN
+F 2 "" H 5400 5150 50  0001 C CNN
+F 3 "" H 5850 5250 50  0001 C CNN
+	1    5000 5100
+	-1   0    0    -1  
 $EndComp
-Text GLabel 2350 2400 0    50   Output ~ 0
+Text GLabel 2100 2400 0    50   Output ~ 0
 Genset_Alarm
 Wire Wire Line
-	2350 2400 2600 2400
+	2100 2400 2600 2400
 Text GLabel 4600 4550 0    50   Input ~ 0
 Genset_Alarm_Reset
 Wire Wire Line
 	4700 3600 4700 4550
-Text GLabel 2350 1900 0    50   Input ~ 0
+Text GLabel 1700 1900 0    50   Input ~ 0
 Genset_Ctrl_+24V
 Wire Wire Line
-	2350 1900 2600 1900
+	1700 1900 2600 1900
 Text Notes 13850 16250 0    50   ~ 0
 From genset battery ammeter\nOriginally connected to\n    control board TB1-9
 Wire Wire Line
 	5500 3600 5500 5100
-Wire Wire Line
-	4400 5100 4800 5100
 Wire Wire Line
 	4700 4550 4600 4550
 Text Notes 10850 14900 0    100  ~ 0
@@ -510,14 +506,14 @@ Connection ~ 12950 17700
 $Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 5B396029
-P 10100 3900
+P 9400 3900
 AR Path="/5B1A0A6E/5B396029" Ref="SW1"  Part="1" 
 AR Path="/5AE8F0EF/5B396029" Ref="SW?"  Part="1" 
-F 0 "SW1" H 10100 4185 50  0000 C CNN
-F 1 "Genset Start" H 10100 4094 50  0000 C CNN
-F 2 "" H 10100 4100 50  0001 C CNN
-F 3 "" H 10100 4100 50  0001 C CNN
-	1    10100 3900
+F 0 "SW1" H 9400 4185 50  0000 C CNN
+F 1 "Genset Start" H 9400 4094 50  0000 C CNN
+F 2 "" H 9400 4100 50  0001 C CNN
+F 3 "" H 9400 4100 50  0001 C CNN
+	1    9400 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -534,7 +530,7 @@ F 4 "MS4SM-CE-ADC" V 12100 4350 50  0001 C CNN "Model"
 	1    12100 4350
 	0    1    1    0   
 $EndComp
-Text GLabel 13700 4350 0    50   Output ~ 0
+Text GLabel 15000 4500 2    50   Output ~ 0
 Genset_Ctrl_+24V
 Wire Wire Line
 	14500 4350 14600 4350
@@ -563,49 +559,34 @@ Wire Wire Line
 	12500 6500 12500 6800
 Wire Wire Line
 	11800 6700 11450 6700
-Wire Wire Line
-	11450 6700 11450 6800
-$Comp
-L power:GND #PWR0106
-U 1 1 5B396048
-P 11450 6800
-AR Path="/5B1A0A6E/5B396048" Ref="#PWR0106"  Part="1" 
-AR Path="/5AE8F0EF/5B396048" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0106" H 11450 6550 50  0001 C CNN
-F 1 "GND" H 11455 6627 50  0000 C CNN
-F 2 "" H 11450 6800 50  0001 C CNN
-F 3 "" H 11450 6800 50  0001 C CNN
-	1    11450 6800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5B39604F
-P 10100 5350
+P 9450 5350
 AR Path="/5B1A0A6E/5B39604F" Ref="SW2"  Part="1" 
 AR Path="/5AE8F0EF/5B39604F" Ref="SW?"  Part="1" 
-F 0 "SW2" H 10100 5650 50  0000 C CNN
-F 1 "Genset Stop" H 10100 5550 50  0000 C CNN
-F 2 "" H 10100 5550 50  0001 C CNN
-F 3 "" H 10100 5550 50  0001 C CNN
-	1    10100 5350
+F 0 "SW2" H 9450 5650 50  0000 C CNN
+F 1 "Genset Stop" H 9450 5550 50  0000 C CNN
+F 2 "" H 9450 5550 50  0001 C CNN
+F 3 "" H 9450 5550 50  0001 C CNN
+	1    9450 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 11700 7100 0    50   Input ~ 0
+Text GLabel 11650 7100 0    50   Input ~ 0
 Genset_Remote_Run
 Wire Wire Line
-	11700 7100 11800 7100
+	11650 7100 11800 7100
 Wire Wire Line
 	11200 6300 11200 5850
 Connection ~ 11200 6300
 Wire Wire Line
-	9900 4100 9700 4100
+	9200 4100 9000 4100
 Wire Wire Line
-	9700 4100 9700 3900
+	9000 4100 9000 3900
 Wire Wire Line
-	9700 3900 9900 3900
-Connection ~ 9700 4100
-Text GLabel 14700 3850 2    50   Input ~ 0
+	9000 3900 9200 3900
+Connection ~ 9000 4100
+Text GLabel 15350 3850 2    50   Input ~ 0
 Battery_+24V
 Wire Wire Line
 	14500 3850 14600 3850
@@ -616,37 +597,26 @@ Wire Wire Line
 Wire Wire Line
 	11450 3800 11800 3800
 Wire Wire Line
-	13900 3850 12800 3850
-Wire Wire Line
-	12800 3850 12800 4550
-Wire Wire Line
 	12800 4550 12400 4550
 Wire Wire Line
 	14600 3850 14600 4350
 Connection ~ 14600 3850
 Wire Wire Line
-	14600 3850 14700 3850
+	14600 3850 15350 3850
 Wire Wire Line
-	10300 3900 10500 3900
-Wire Wire Line
-	10500 3900 10500 3200
-Wire Wire Line
-	10500 3200 12800 3200
-Wire Wire Line
-	12800 3200 12800 3850
-Connection ~ 12800 3850
+	9600 3900 9800 3900
 Wire Wire Line
 	11200 6300 11800 6300
 Connection ~ 11450 4450
 Wire Wire Line
 	11450 4450 11450 4550
 $Comp
-L mrm:Relay_Octal_11pin K3
+L mrm:Relay_Octal_11pin K4
 U 1 1 5B39607D
 P 12100 6900
-AR Path="/5B1A0A6E/5B39607D" Ref="K3"  Part="1" 
+AR Path="/5B1A0A6E/5B39607D" Ref="K4"  Part="1" 
 AR Path="/5AE8F0EF/5B39607D" Ref="K?"  Part="1" 
-F 0 "K3" V 11133 6900 50  0000 C CNN
+F 0 "K4" V 11133 6900 50  0000 C CNN
 F 1 "Genset Remote Run Relay" V 11224 6900 50  0000 C CNN
 F 2 "" H 12450 6950 50  0001 C CNN
 F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 12950 7050 50  0001 C CNN
@@ -685,17 +655,17 @@ Wire Notes Line width 10
 	14200 4000 14200 4300
 Text Notes 14700 4200 0    50   ~ 0
 From genset battery ammeter\nOriginally connected to\n    control board TB1-9
-Text Notes 11700 2850 0    100  ~ 0
+Text Notes 11750 1000 0    100  ~ 0
 Genset Control Power
 Wire Wire Line
-	10300 4100 11200 4100
+	9600 4100 10300 4100
 $Comp
-L mrm:Relay_Timer K4
+L mrm:Relay_Timer K3
 U 1 1 5B3ADBF7
 P 14050 6000
-AR Path="/5B1A0A6E/5B3ADBF7" Ref="K4"  Part="1" 
+AR Path="/5B1A0A6E/5B3ADBF7" Ref="K3"  Part="1" 
 AR Path="/5AE8F0EF/5B3ADBF7" Ref="K?"  Part="1" 
-F 0 "K4" V 13133 6000 50  0000 C CNN
+F 0 "K3" V 13133 6000 50  0000 C CNN
 F 1 "Cool-down Timer Relay" V 13224 6000 50  0000 C CNN
 F 2 "" H 14500 6050 50  0001 C CNN
 F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 14900 6150 50  0001 C CNN
@@ -703,8 +673,6 @@ F 4 "MS4SM-CE-ADC" V 14050 6000 50  0001 C CNN "Model"
 	1    14050 6000
 	0    1    1    0   
 $EndComp
-Text GLabel 13350 5350 0    50   Input ~ 0
-Genset_Ctrl_+24V
 Wire Wire Line
 	13350 5350 13750 5350
 Wire Wire Line
@@ -749,16 +717,16 @@ Wire Wire Line
 Text GLabel 11000 8200 2    50   Input ~ 0
 Idle_Return
 Wire Wire Line
-	9700 5350 9900 5350
+	9000 5350 9250 5350
 Wire Wire Line
-	9700 4100 9700 5350
-Connection ~ 9700 5350
+	9000 4100 9000 5350
+Connection ~ 9000 5350
 Wire Wire Line
 	13750 5750 12500 5750
 Wire Wire Line
 	12500 5750 12500 5350
 Wire Wire Line
-	12500 5350 10300 5350
+	12500 5350 9650 5350
 $Comp
 L mrm:Relay_Octal_11pin_separate K5
 U 2 1 5B430CFF
@@ -781,23 +749,19 @@ Wire Wire Line
 Wire Wire Line
 	13750 5850 11200 5850
 Connection ~ 11200 5850
-Wire Wire Line
-	11200 5850 11200 4100
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 5B470232
-P 5000 5100
+P 4100 5100
 AR Path="/5AE8F11D/5B470232" Ref="SW?"  Part="1" 
 AR Path="/5B1A0A6E/5B470232" Ref="SW?"  Part="1" 
-F 0 "SW?" H 5000 5335 50  0000 C CNN
-F 1 "Low Temp Defeat" H 5000 5244 50  0000 C CNN
-F 2 "" H 5000 5100 50  0001 C CNN
-F 3 "" H 5000 5100 50  0001 C CNN
-	1    5000 5100
+F 0 "SW?" H 4100 5335 50  0000 C CNN
+F 1 "Low Temp Defeat" H 4100 5244 50  0000 C CNN
+F 2 "" H 4100 5100 50  0001 C CNN
+F 3 "" H 4100 5100 50  0001 C CNN
+	1    4100 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 5100 5500 5100
 Wire Wire Line
 	6300 5100 6300 4700
 Wire Wire Line
@@ -849,35 +813,35 @@ $EndComp
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 5BAE766B
-P 10100 3200
-F 0 "SW?" H 10100 3435 50  0000 C CNN
-F 1 "Control Power Enable Override" H 10100 3344 50  0000 C CNN
-F 2 "" H 10100 3200 50  0001 C CNN
-F 3 "" H 10100 3200 50  0001 C CNN
-	1    10100 3200
+P 9400 2650
+F 0 "SW?" H 9400 2885 50  0000 C CNN
+F 1 "Ctrl Pwr Force On" H 9400 2794 50  0000 C CNN
+F 2 "" H 9400 2650 50  0001 C CNN
+F 3 "" H 9400 2650 50  0001 C CNN
+	1    9400 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 3200 10300 3200
-Connection ~ 10500 3200
+	9800 2650 9600 2650
+Connection ~ 9800 2650
 Wire Wire Line
-	9900 3200 9700 3200
+	9200 2650 9000 2650
 Wire Wire Line
-	9700 3200 9700 3900
-Connection ~ 9700 3900
+	9000 2650 9000 3900
+Connection ~ 9000 3900
 Wire Wire Line
-	10000 7900 9700 7900
+	10000 7900 9000 7900
 $Comp
 L power:GND #PWR?
 U 1 1 5BAFFF25
-P 9700 8000
+P 9000 8000
 AR Path="/5B1A0A6E/5BAFFF25" Ref="#PWR?"  Part="1" 
 AR Path="/5AE8F0EF/5BAFFF25" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9700 7750 50  0001 C CNN
-F 1 "GND" H 9705 7827 50  0000 C CNN
-F 2 "" H 9700 8000 50  0001 C CNN
-F 3 "" H 9700 8000 50  0001 C CNN
-	1    9700 8000
+F 0 "#PWR?" H 9000 7750 50  0001 C CNN
+F 1 "GND" H 9005 7827 50  0000 C CNN
+F 2 "" H 9000 8000 50  0001 C CNN
+F 3 "" H 9000 8000 50  0001 C CNN
+	1    9000 8000
 	1    0    0    -1  
 $EndComp
 Text GLabel 9600 8300 0    50   Input ~ 0
@@ -886,8 +850,6 @@ Wire Wire Line
 	9600 8300 10000 8300
 Wire Wire Line
 	10600 8200 11000 8200
-Wire Wire Line
-	10600 7900 11500 7900
 Wire Wire Line
 	11500 7900 11500 8150
 Wire Wire Line
@@ -926,14 +888,330 @@ F 3 "" H 11150 8450 50  0001 C CNN
 $EndComp
 Wire Notes Line width 10
 	10300 8050 10300 8250
-Connection ~ 9700 7900
+Connection ~ 9000 7900
 Wire Wire Line
-	9700 5350 9700 7900
-Wire Wire Line
-	9700 7900 9700 8000
+	9000 7900 9000 8000
 Wire Wire Line
 	14650 7400 14650 8250
 Connection ~ 14650 7400
-Text Notes 10300 6950 0    50   ~ 0
+Text Notes 11850 9000 0    50   ~ 0
 KA-4474-1\n109P198\n24V DC 3CO
+Text Label 2300 1900 0    50   ~ 0
+G2
+Text Label 2300 2300 0    50   ~ 0
+G3
+$Comp
+L Connector:Screw_Terminal_01x11 J?
+U 1 1 5DA56CD9
+P 2000 7300
+F 0 "J?" V 2217 7296 50  0001 C CNN
+F 1 "Screw_Terminal_01x11" V 2125 7296 50  0001 C CNN
+F 2 "" H 2000 7300 50  0001 C CNN
+F 3 "~" H 2000 7300 50  0001 C CNN
+	1    2000 7300
+	0    -1   -1   0   
+$EndComp
+Text Notes 1150 6150 0    100  ~ 0
+Genset Speed Controller
+Text Notes 1500 7200 1    50   ~ 0
+Battery +
+Text Notes 1600 7200 1    50   ~ 0
+Battery -
+Text Notes 1700 7200 1    50   ~ 0
+Actuator +
+Text Notes 1800 7200 1    50   ~ 0
+Actuator -
+Text Notes 1900 7200 1    50   ~ 0
+Mag Pickup +
+Text Notes 2000 7200 1    50   ~ 0
+Mag Pickup -
+Text Notes 2100 7200 1    50   ~ 0
+Remote Speed Common
+Text Notes 2200 7200 1    50   ~ 0
+Remote Speed Wiper
+Text Notes 2300 7200 1    50   ~ 0
+Remote Speed High
+Text Notes 2400 7200 1    50   ~ 0
+Idle
+Text Notes 2500 7200 1    50   ~ 0
+Common
+Text GLabel 2100 7900 3    50   Input ~ 0
+Idle_Call
+Wire Wire Line
+	2100 7900 2100 7500
+Text GLabel 2400 7900 3    50   Input ~ 0
+Idle_Return
+Wire Wire Line
+	2400 7900 2400 7500
+Text Label 2300 2200 0    50   ~ 0
+G4
+Text Label 5500 3900 1    50   ~ 0
+G5
+Text Label 2100 7700 1    50   ~ 0
+G6
+Text Label 2400 7700 1    50   ~ 0
+G7
+Text Label 5800 3900 1    50   ~ 0
+G8
+Text Label 2400 2400 2    50   ~ 0
+G9
+Text Label 4700 3800 3    50   ~ 0
+G10
+Text Label 15150 3850 0    50   ~ 0
+G1
+Wire Wire Line
+	9000 5350 9000 6000
+$Comp
+L Device:Lamp LA?
+U 1 1 5DB58252
+P 9800 4500
+F 0 "LA?" V 9535 4500 50  0000 C CNN
+F 1 "Run" V 9626 4500 50  0000 C CNN
+F 2 "" V 9800 4600 50  0001 C CNN
+F 3 "~" V 9800 4600 50  0001 C CNN
+	1    9800 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5DB59FD1
+P 9450 6500
+F 0 "LA?" V 9185 6500 50  0000 C CNN
+F 1 "Alarm" V 9276 6500 50  0000 C CNN
+F 2 "" V 9450 6600 50  0001 C CNN
+F 3 "~" V 9450 6600 50  0001 C CNN
+	1    9450 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 7450 9000 7450
+Connection ~ 9000 7450
+Wire Wire Line
+	9000 7450 9000 7900
+$Comp
+L Device:Lamp LA?
+U 1 1 5DB72E46
+P 9450 7450
+F 0 "LA?" V 9185 7450 50  0000 C CNN
+F 1 "Idle" V 9276 7450 50  0000 C CNN
+F 2 "" V 9450 7550 50  0001 C CNN
+F 3 "~" V 9450 7550 50  0001 C CNN
+	1    9450 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5DB95D16
+P 9800 2000
+F 0 "LA?" V 9535 2000 50  0000 C CNN
+F 1 "Control Power" V 9626 2000 50  0000 C CNN
+F 2 "" V 9800 2100 50  0001 C CNN
+F 3 "~" V 9800 2100 50  0001 C CNN
+	1    9800 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 3900 9800 3000
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5DB9933E
+P 10350 2650
+F 0 "SW?" H 10350 2885 50  0000 C CNN
+F 1 "Ctrl Pwr Force Off" H 10350 2794 50  0000 C CNN
+F 2 "" H 10350 2650 50  0001 C CNN
+F 3 "" H 10350 2650 50  0001 C CNN
+	1    10350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 3850 13600 3850
+Wire Wire Line
+	9800 2650 10150 2650
+Wire Wire Line
+	13600 2650 13600 3850
+Wire Wire Line
+	10550 2650 13600 2650
+Wire Wire Line
+	9800 3000 12800 3000
+Wire Wire Line
+	12800 3000 12800 4550
+Connection ~ 9800 3000
+Wire Wire Line
+	9800 3000 9800 2650
+Wire Wire Line
+	9000 2650 9000 2000
+Wire Wire Line
+	9000 2000 9600 2000
+Connection ~ 9000 2650
+Text GLabel 12000 2000 2    50   Input ~ 0
+Genset_Ctrl_+24V
+Wire Wire Line
+	10000 2000 10250 2000
+Wire Wire Line
+	10000 4500 10300 4500
+Text GLabel 9600 4750 2    50   Input ~ 0
+Genset_Ctrl_+24V
+Wire Wire Line
+	9600 4500 9450 4500
+Wire Wire Line
+	9450 4500 9450 4750
+Wire Wire Line
+	9450 4750 9600 4750
+Wire Wire Line
+	9250 6500 9000 6500
+Connection ~ 9000 6500
+Wire Wire Line
+	9000 6500 9000 6850
+Text GLabel 10050 6500 2    50   Input ~ 0
+Genset_Alarm
+Wire Wire Line
+	10050 6500 9650 6500
+Wire Wire Line
+	10600 7900 10700 7900
+Wire Wire Line
+	10700 7450 10700 7900
+Wire Wire Line
+	9650 7450 10700 7450
+Connection ~ 10700 7900
+Wire Wire Line
+	10700 7900 11500 7900
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DC83FD7
+P 9450 6000
+AR Path="/5B1A0A6E/5DC83FD7" Ref="SW?"  Part="1" 
+AR Path="/5AE8F0EF/5DC83FD7" Ref="SW?"  Part="1" 
+F 0 "SW?" H 9450 6300 50  0000 C CNN
+F 1 "Alarm Reset" H 9450 6200 50  0000 C CNN
+F 2 "" H 9450 6200 50  0001 C CNN
+F 3 "" H 9450 6200 50  0001 C CNN
+	1    9450 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 6000 9000 6000
+Connection ~ 9000 6000
+Wire Wire Line
+	9000 6000 9000 6500
+Text GLabel 10050 6000 2    50   Output ~ 0
+Genset_Alarm_Reset
+Wire Wire Line
+	10050 6000 9650 6000
+Wire Notes Line
+	8750 7750 9900 7750
+Wire Notes Line
+	9900 7750 9900 5000
+Wire Notes Line
+	9900 5000 10800 5000
+Wire Wire Line
+	10300 4500 10300 4100
+Connection ~ 10300 4100
+Wire Wire Line
+	10300 4100 11200 4100
+Wire Wire Line
+	11200 4100 11200 5850
+Wire Wire Line
+	13700 4350 13700 4500
+Wire Wire Line
+	13700 4500 15000 4500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DD21115
+P 9450 7050
+F 0 "SW?" H 9200 7150 50  0000 C CNN
+F 1 "EStop" H 9450 7244 50  0001 C CNN
+F 2 "" H 9450 7250 50  0001 C CNN
+F 3 "~" H 9450 7250 50  0001 C CNN
+	1    9450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5DD2210B
+P 9800 1500
+F 0 "SW?" H 9800 1715 50  0000 C CNN
+F 1 "EStop" H 9800 1624 50  0000 C CNN
+F 2 "" H 9800 1700 50  0001 C CNN
+F 3 "~" H 9800 1700 50  0001 C CNN
+	1    9800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Open SW?
+U 1 1 5DD37321
+P 9450 6850
+F 0 "SW?" H 9200 6950 50  0000 C CNN
+F 1 "EStop" H 9450 6974 50  0000 C CNN
+F 2 "" H 9450 7050 50  0001 C CNN
+F 3 "~" H 9450 7050 50  0001 C CNN
+	1    9450 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD38418
+P 17850 2250
+F 0 "#PWR?" H 17850 2000 50  0001 C CNN
+F 1 "GND" H 17855 2077 50  0000 C CNN
+F 2 "" H 17850 2250 50  0001 C CNN
+F 3 "" H 17850 2250 50  0001 C CNN
+	1    17850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 2150 17850 2150
+Wire Wire Line
+	17850 2150 17850 2250
+Wire Wire Line
+	18550 1550 17850 1550
+Wire Wire Line
+	17850 1550 17850 2150
+Connection ~ 17850 2150
+Wire Wire Line
+	11450 6700 11450 6850
+Wire Wire Line
+	9250 6850 9000 6850
+Connection ~ 9000 6850
+Wire Wire Line
+	9000 6850 9000 7050
+Wire Wire Line
+	9650 6850 11450 6850
+Wire Wire Line
+	9250 7050 9000 7050
+Connection ~ 9000 7050
+Wire Wire Line
+	9000 7050 9000 7450
+Text GLabel 10050 7050 2    50   Input ~ 0
+Genset_Shutdown
+Wire Wire Line
+	9650 7050 10050 7050
+Text Notes 9450 2250 0    50   ~ 0
+Illuminated 3-way switch
+Wire Wire Line
+	10250 2000 10250 1500
+Wire Wire Line
+	10250 1500 10000 1500
+Connection ~ 10250 2000
+Wire Wire Line
+	10250 2000 12000 2000
+Wire Wire Line
+	13350 1200 9400 1200
+Wire Wire Line
+	9400 1200 9400 1500
+Wire Wire Line
+	9400 1500 9600 1500
+Wire Wire Line
+	13350 1200 13350 5350
+Wire Notes Line
+	10800 1000 10800 5000
+Text Notes 10500 1100 0    50   ~ 0
+Panel
+Text Notes 10850 1100 0    50   ~ 0
+Cabinet
+Wire Wire Line
+	5300 5100 5500 5100
+Wire Wire Line
+	3600 5100 3900 5100
+Wire Wire Line
+	4300 5100 4700 5100
 $EndSCHEMATC
