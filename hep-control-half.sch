@@ -6,8 +6,8 @@ $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 5 5
 Title ""
-Date "2019-10-06"
-Rev "1.5"
+Date "2019-10-15"
+Rev "1.6"
 Comp ""
 Comment1 ""
 Comment2 ""
